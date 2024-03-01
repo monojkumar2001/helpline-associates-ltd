@@ -22,16 +22,43 @@ wind.on('scroll', function () {
   }
 });
 
-
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 4.3,
+  spaceBetween: 20,
+  freeMode: true,
+  loop: true, // Enable continuous loop
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  coverflowEffect: {
+    rotate: 0, // Set rotation angle to 0 degrees
+    stretch: 0, // Set stretch to 0 to disable stretching
+    depth: 100, // Set depth to control the depth of the blur effect
+    modifier: 1, // Set modifier to control the intensity of the blur effect
+    slideShadows: false, // Disable slide shadows
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
-  });
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+
 var swiper = new Swiper(".myteam", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -41,7 +68,7 @@ var swiper = new Swiper(".myteam", {
       clickable: true,
     },
   });
-var swiper = new Swiper(".myImage", {
+  var swiper = new Swiper(".myImage", {
     slidesPerView: 5,
     spaceBetween: 10,
     freeMode: true,
@@ -49,7 +76,12 @@ var swiper = new Swiper(".myImage", {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
 
   function showTabContent(tabName) {
     const tabContents = document.getElementsByClassName("tab-content");
@@ -69,3 +101,11 @@ var swiper = new Swiper(".myImage", {
     activeTabButton.classList.add("active");
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("my-video");
+  var playButton = document.getElementById("play-video-btn");
+
+  playButton.addEventListener("click", function () {
+    video.play();
+  });
+});

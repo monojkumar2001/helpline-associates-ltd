@@ -38,3 +38,11 @@ function previousSteps() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("my-video");
+    var playButton = document.getElementById("play-video-btn");
+  
+    playButton.addEventListener("click", function () {
+      video.play();
+    });
+  });

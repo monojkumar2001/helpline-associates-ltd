@@ -29,6 +29,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- Bootstrap Icon CSS -->
@@ -509,7 +510,6 @@
                                 </select>
                               </div>
                             </div>
-                  
                           </div>
                         </div>
                       </div>
@@ -540,319 +540,318 @@
                   class="tab-content"
                   style="display: none"
                 >
-                <form action="">
-                  <!-- Step 1: Travel Details -->
-                  <div class="travel-form" id="steps1">
-                    <div class="travel-form-title">
-                      <h1>Travel Details</h1>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="date">Date</label>
-                              <input type="date" name="date" id="date" />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="time">Date</label>
-                              <input type="time" name="time" id="time" />
-                            </div>
-                          </div>
-                          <div class="col-md-6"></div>
-                        </div>
+                  <form action="">
+                    <!-- Step 1: Travel Details -->
+                    <div class="travel-form" id="steps1">
+                      <div class="travel-form-title">
+                        <h1>Travel Details</h1>
                       </div>
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Flight Number</label>
-                              <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="write here.."
-                              />
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="date">Date</label>
+                                <input type="date" name="date" id="date" />
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="time">Service Type</label>
-                              <select
-                                class="form-input-select"
-                                aria-label=".form-select-lg example"
-                              >
-                                <option selected>Select</option>
-                                <option value="1">General</option>
-                                <option value="2">VIP</option>
-                              </select>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="time">Date</label>
+                                <input type="time" name="time" id="time" />
+                              </div>
                             </div>
+                            <div class="col-md-6"></div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="time">Service Type</label>
-                              <select
-                                class="form-input-select"
-                                aria-label=".form-select-lg example"
-                              >
-                                <option selected>Select</option>
-                                <option value="1">Arrival</option>
-                                <option value="2">Departure</option>
-                              </select>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Flight Number</label>
+                                <input
+                                  type="text"
+                                  name=""
+                                  id=""
+                                  placeholder="write here.."
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Number of Adult</label>
-                              <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="write here.."
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Number of Children</label>
-                              <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="2-12 years"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Number of Infant</label>
-                              <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="0-2 years"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-input-item">
-                          <label for="">Total Cost</label>
-                          <div class="form-input-cost">
-                            <input
-                              type="text"
-                              name=""
-                              id=""
-                              placeholder="2-12 years"
-                            />
-                            <img
-                              src="/assets/images/home/icons/lock.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Step 2: Additional Details -->
-                  <div class="travel-form" id="steps2" style="display: none">
-                    <div class="travel-form-title">
-                      <h1>Passenger Details</h1>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="name">Name</label>
-                              <input
-                                type="name"
-                                name="name"
-                                id="name"
-                                placeholder="Name"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Gender</label>
-                              <select
-                                class="form-input-select"
-                                aria-label=".form-select-lg example"
-                              >
-                                <option selected>Select</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Email</label>
-                              <input
-                                type="email"
-                                name=""
-                                id=""
-                                placeholder="write here.."
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="time">Phone</label>
-                              <div class="phone-number-fluild">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="time">Service Type</label>
                                 <select
                                   class="form-input-select"
                                   aria-label=".form-select-lg example"
                                 >
-                                  <option selected>+880</option>
-                                  <option value="1">+86</option>
-                                  <option value="2">+91</option>
-                                  <option value="3">+34</option>
-                                  <option value="4">+39</option>
-                                  <option value="5">+81</option>
+                                  <option selected>Select</option>
+                                  <option value="1">General</option>
+                                  <option value="2">VIP</option>
                                 </select>
-                                <input type="text" />
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-
-                      <div class="col-md-12">
-                        <div class="form-input-item">
-                          <label for=""
-                            >Any Specific Request or Message</label
-                          >
-                          <textarea
-                            name=""
-                            id=""
-                            cols="30"
-                            rows="10"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Step 2: Additional Details -->
-                  <div class="travel-form" id="steps3" style="display: none">
-                    <div class="travel-form-details">
-                      <h4>Travel Details</h4>
-                      <div class="travel-form-details-content">
-                        <ul>
-                          <li>
-                            <p>Date & Time: 05/02/24, 3 PM</p>
-                            <p>Number of Adult: 02</p>
-                          </li>
-                          <li>
-                            <p>Flight Number: BG 202</p>
-                            <p>Number of Infant: 0</p>
-                          </li>
-                          <li>
-                            <p>Service Type: VIP</p>
-                            <p>Number of Children: 02</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="travel-form-details">
-                      <h4>Personal Information</h4>
-                      <div class="travel-form-details-content">
-                        <ul>
-                          <li>
-                            <p>Name: Mohammad Rahman</p>
-                            <p>Gender: Male</p>
-                          </li>
-                          <li>
-                            <p>Email: mrahman@example.com</p>
-                            <p>Phone: +8801712345678</p>
-                          </li>
-                          <li>
-                            <div>
-                              <p>Request Message:</p>
-                              <p>
-                                Please provide wheelchair assistance upon
-                                arrival. Thank you
-                              </p>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="time">Service Type</label>
+                                <select
+                                  class="form-input-select"
+                                  aria-label=".form-select-lg example"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">Arrival</option>
+                                  <option value="2">Departure</option>
+                                </select>
+                              </div>
                             </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="">Total Cost</label>
-                              <div class="form-input-cost">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Number of Adult</label>
+                                <input
+                                  type="text"
+                                  name=""
+                                  id=""
+                                  placeholder="write here.."
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Number of Children</label>
                                 <input
                                   type="text"
                                   name=""
                                   id=""
                                   placeholder="2-12 years"
                                 />
-                                <img
-                                  src="/assets/images/home/icons/lock.svg"
-                                  alt=""
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Number of Infant</label>
+                                <input
+                                  type="text"
+                                  name=""
+                                  id=""
+                                  placeholder="0-2 years"
                                 />
                               </div>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="form-input-item">
-                              <label for="time">Select Payment Method</label>
-                              <select
-                                class="form-input-select"
-                                aria-label=".form-select-lg example"
-                              >
-                                <option selected>Select</option>
-                                <option value="1">Bkash</option>
-                                <option value="2">Brack Bank</option>
-                              </select>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-input-item">
+                            <label for="">Total Cost</label>
+                            <div class="form-input-cost">
+                              <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="2-12 years"
+                              />
+                              <img
+                                src="/assets/images/home/icons/lock.svg"
+                                alt=""
+                              />
                             </div>
                           </div>
-                
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- Add more steps as needed -->
+                    <!-- Step 2: Additional Details -->
+                    <div class="travel-form" id="steps2" style="display: none">
+                      <div class="travel-form-title">
+                        <h1>Passenger Details</h1>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="name">Name</label>
+                                <input
+                                  type="name"
+                                  name="name"
+                                  id="name"
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Gender</label>
+                                <select
+                                  class="form-input-select"
+                                  aria-label=".form-select-lg example"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">Male</option>
+                                  <option value="2">Female</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Email</label>
+                                <input
+                                  type="email"
+                                  name=""
+                                  id=""
+                                  placeholder="write here.."
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="time">Phone</label>
+                                <div class="phone-number-fluild">
+                                  <select
+                                    class="form-input-select"
+                                    aria-label=".form-select-lg example"
+                                  >
+                                    <option selected>+880</option>
+                                    <option value="1">+86</option>
+                                    <option value="2">+91</option>
+                                    <option value="3">+34</option>
+                                    <option value="4">+39</option>
+                                    <option value="5">+81</option>
+                                  </select>
+                                  <input type="text" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-                  <div class="col-md-12 mt-3 d-flex align-items-center gap-2">
-                    <div
-                      class="custom-btn w-100 travel-btn travel-back-btn2"
-                      style="display: none"
-                      onclick="previousSteps()"
-                    >
-                      Back
+                        <div class="col-md-12">
+                          <div class="form-input-item">
+                            <label for=""
+                              >Any Specific Request or Message</label
+                            >
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows="10"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div
-                      class="custom-btn w-100 travel-btn travel-next-btn"
-                      onclick="nextSteps()"
-                    >
-                      Next
+                    <!-- Step 2: Additional Details -->
+                    <div class="travel-form" id="steps3" style="display: none">
+                      <div class="travel-form-details">
+                        <h4>Travel Details</h4>
+                        <div class="travel-form-details-content">
+                          <ul>
+                            <li>
+                              <p>Date & Time: 05/02/24, 3 PM</p>
+                              <p>Number of Adult: 02</p>
+                            </li>
+                            <li>
+                              <p>Flight Number: BG 202</p>
+                              <p>Number of Infant: 0</p>
+                            </li>
+                            <li>
+                              <p>Service Type: VIP</p>
+                              <p>Number of Children: 02</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="travel-form-details">
+                        <h4>Personal Information</h4>
+                        <div class="travel-form-details-content">
+                          <ul>
+                            <li>
+                              <p>Name: Mohammad Rahman</p>
+                              <p>Gender: Male</p>
+                            </li>
+                            <li>
+                              <p>Email: mrahman@example.com</p>
+                              <p>Phone: +8801712345678</p>
+                            </li>
+                            <li>
+                              <div>
+                                <p>Request Message:</p>
+                                <p>
+                                  Please provide wheelchair assistance upon
+                                  arrival. Thank you
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Total Cost</label>
+                                <div class="form-input-cost">
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="2-12 years"
+                                  />
+                                  <img
+                                    src="/assets/images/home/icons/lock.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="time">Select Payment Method</label>
+                                <select
+                                  class="form-input-select"
+                                  aria-label=".form-select-lg example"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">Bkash</option>
+                                  <option value="2">Brack Bank</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </form>
+
+                    <!-- Add more steps as needed -->
+
+                    <div class="col-md-12 mt-3 d-flex align-items-center gap-2">
+                      <div
+                        class="custom-btn w-100 travel-btn travel-back-btn2"
+                        style="display: none"
+                        onclick="previousSteps()"
+                      >
+                        Back
+                      </div>
+                      <div
+                        class="custom-btn w-100 travel-btn travel-next-btn"
+                        onclick="nextSteps()"
+                      >
+                        Next
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -921,7 +920,7 @@
     <section class="about-us cpy-6">
       <div class="container">
         <div class="about-us-wrapper">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
               <div class="about-us-left">
                 <div class="about-us-img">
@@ -952,7 +951,7 @@
                   and experienced team to extend personalized services to their
                   valued passengers with utmost care.
                 </p>
-                <a href="">
+                <a href="/gallery" class="gallery-link">
                   <span>Visit Our Sultan Tea Gallery</span>
                   <img src="/assets/images/home/about/right-arow.svg" alt="" />
                 </a>
@@ -960,7 +959,7 @@
             </div>
           </div>
         </div>
-        <div class="about-us-count cpy-7">
+        <div class="about-us-count cpt-6">
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="about-us-count-left">
@@ -968,7 +967,7 @@
                   We as a team aim to provide you with unwavering support
                   through the following services
                 </p>
-                <div class="about-us-count-lists">
+                <div class="about-us-count-lists about-us-count-lists-1">
                   <div class="about-us-count-list">
                     <img src="/assets/images/home/about/icon-3.svg" alt="" />
                     <h5>18+</h5>
@@ -980,7 +979,7 @@
                     <p>Happy Clients</p>
                   </div>
                 </div>
-                <div class="about-us-count-lists">
+                <div class="about-us-count-lists about-us-count-lists-2">
                   <div class="about-us-count-list">
                     <img src="/assets/images/home/about/icon-5.svg" alt="" />
                     <h5>18+</h5>
@@ -996,19 +995,29 @@
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="about-us-count-right">
+                <div class="about-us-rokect-img">
+                  <img src="/assets/images/home/about/roect.png " alt="" />
+                </div>
                 <div class="about-us-video-img">
                   <img src="/assets/images/home/about/about-img-2.png" alt="" />
                 </div>
                 <button class="about-us-video-btn">
                   <img src="/assets/images/home/about/video-icon.svg" alt="" />
                 </button>
+               
+<!--              
+              <video id="my-video" class="full-width-video" controls>
+                <source src="/assets/video/video.mp4" type="video/mp4" />
+              </video>
+              
+              <button id="play-video-btn" class="about-us-video-btn">
+                <img src="/assets/images/home/about/video-icon.svg" alt="" />
+              </button> -->
               </div>
             </div>
           </div>
 
-          <div class="about-us-rokect-img">
-            <img src="/assets/images/home/about/roect.png " alt="" />
-          </div>
+         
         </div>
       </div>
     </section>
@@ -1016,38 +1025,42 @@
     <!-- =====================
        Message 
     ====================== -->
-    <section class="message-md cpy-6">
+    <section class="message-md cpb-6">
       <div class="container">
         <div class="message-wrapper">
-          <div class="row">
-            <div class="col-lg-5 col-md-12">
-              <div class="message-left">
-                <div class="message-img">
-                  <img src="/assets/images/home/message-img.png" alt="" />
+         <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-5 col-md-12">
+                <div class="message-left">
+                  <div class="message-img">
+                    <img src="/assets/images/home/message-img.png" alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="message-right">
-                <h2>Message from Md</h2>
-                <p>
-                  Embark on a seamless airport travel with Helpline Ltd,
-                  operating since 2006. With a vision to provide the utmost
-                  support to our passengers, we strive to redefine travel with
-                  premium airport services tailored just for you. From meet and
-                  greet to lounge access, we've got it all covered. We hope you
-                  enjoy travelling with Helpline Ltd.
-                </p>
-                <div class="message-name">
-                  <div class="message-line"></div>
-                  <span>Md. Faizul Islam</span>
-                </div>
-                <div class="message-line-icon">
-                  <img src="/assets/images/home/message-line.svg" alt="" />
+              <div class="col-lg-7 col-md-12">
+                <div class="message-right">
+                  <h2>Message from Md</h2>
+                  <p>
+                    Embark on a seamless airport travel with Helpline Ltd,
+                    operating since 2006. With a vision to provide the utmost
+                    support to our passengers, we strive to redefine travel with
+                    premium airport services tailored just for you. From meet and
+                    greet to lounge access, we've got it all covered. We hope you
+                    enjoy travelling with Helpline Ltd.
+                  </p>
+                  <div class="message-name">
+                    <div class="message-line"></div>
+                    <span>Md. Faizul Islam</span>
+                  </div>
+                  <div class="message-line-icon">
+                    <img src="/assets/images/home/message-line.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+         </div>
         </div>
       </div>
     </section>
@@ -1055,7 +1068,7 @@
         Our Clients
     ====================== -->
     <section class="our-client">
-      <div class="container">
+      <div class="container-fluid">
         <div class="our-client-wrapper">
           <div class="client-title">
             <h2>What Our Clients Say</h2>
@@ -1065,119 +1078,288 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="client-user-item">
-                    <div class="client-user-header">
-                      <div class="client-user-profile">
-                        <div class="user-img">
-                          <img
-                            src="/assets/images/home/user/user-1.png"
-                            alt=""
-                          />
+                  <div class="client-user-items">
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
                         </div>
-                        <div class="user-client-text">
-                          <h5>Emma Thompson</h5>
-                          <p>Travel Enthusiast</p>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
                         </div>
                       </div>
-                      <div class="client-review">
-                        <p>5</p>
-                        <img src="/assets/images/home/user/star.svg" alt="" />
-                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
                     </div>
-                    <p class="client-text">
-                      Airport Assistant made my recent business trip
-                      stress-free. Fast-track security and expert guidance made
-                      it a staple for my travels. Highly recommend!
-                    </p>
-                    <p>2:08 AM . JAN 01, 2023</p>
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="client-user-item">
-                    <div class="client-user-header">
-                      <div class="client-user-profile">
-                        <div class="user-img">
-                          <img
-                            src="/assets/images/home/user/user-1.png"
-                            alt=""
-                          />
+                  <div class="client-user-items">
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
                         </div>
-                        <div class="user-client-text">
-                          <h5>Emma Thompson</h5>
-                          <p>Travel Enthusiast</p>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
                         </div>
                       </div>
-                      <div class="client-review">
-                        <p>5</p>
-                        <img src="/assets/images/home/user/star.svg" alt="" />
-                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
                     </div>
-                    <p class="client-text">
-                      Airport Assistant made my recent business trip
-                      stress-free. Fast-track security and expert guidance made
-                      it a staple for my travels. Highly recommend!
-                    </p>
-                    <p>2:08 AM . JAN 01, 2023</p>
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="client-user-item">
-                    <div class="client-user-header">
-                      <div class="client-user-profile">
-                        <div class="user-img">
-                          <img
-                            src="/assets/images/home/user/user-1.png"
-                            alt=""
-                          />
+                  <div class="client-user-items">
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
                         </div>
-                        <div class="user-client-text">
-                          <h5>Emma Thompson</h5>
-                          <p>Travel Enthusiast</p>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
                         </div>
                       </div>
-                      <div class="client-review">
-                        <p>5</p>
-                        <img src="/assets/images/home/user/star.svg" alt="" />
-                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
                     </div>
-                    <p class="client-text">
-                      Airport Assistant made my recent business trip
-                      stress-free. Fast-track security and expert guidance made
-                      it a staple for my travels. Highly recommend!
-                    </p>
-                    <p>2:08 AM . JAN 01, 2023</p>
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="client-user-item">
-                    <div class="client-user-header">
-                      <div class="client-user-profile">
-                        <div class="user-img">
-                          <img
-                            src="/assets/images/home/user/user-1.png"
-                            alt=""
-                          />
+                  <div class="client-user-items">
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
                         </div>
-                        <div class="user-client-text">
-                          <h5>Emma Thompson</h5>
-                          <p>Travel Enthusiast</p>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
                         </div>
                       </div>
-                      <div class="client-review">
-                        <p>5</p>
-                        <img src="/assets/images/home/user/star.svg" alt="" />
-                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
                     </div>
-                    <p class="client-text">
-                      Airport Assistant made my recent business trip
-                      stress-free. Fast-track security and expert guidance made
-                      it a staple for my travels. Highly recommend!
-                    </p>
-                    <p>2:08 AM . JAN 01, 2023</p>
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="client-user-items">
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
+                    <div class="client-user-item">
+                      <div class="client-user-header">
+                        <div class="client-user-profile">
+                          <div class="user-img">
+                            <img
+                              src="/assets/images/home/user/user-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="user-client-text">
+                            <h5>Emma Thompson</h5>
+                            <p>Travel Enthusiast</p>
+                          </div>
+                        </div>
+                        <div class="client-review">
+                          <p>5</p>
+                          <img src="/assets/images/home/user/star.svg" alt="" />
+                        </div>
+                      </div>
+                      <p class="client-text">
+                        Airport Assistant made my recent business trip
+                        stress-free. Fast-track security and expert guidance made
+                        it a staple for my travels. Highly recommend!
+                      </p>
+                      <p>2:08 AM . JAN 01, 2023</p>
+                    </div>
+                  </div>
+                </div>
+               
               </div>
-              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
@@ -1189,7 +1371,7 @@
     <section class="team-member cpy-6">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-12">
+          <div class="col-lg-4 col-md-12">
             <div class="team-member-content">
               <h2>Meet our incredible team members.</h2>
               <p>
@@ -1199,7 +1381,7 @@
               <button class="custom-btn">Join Our Team</button>
             </div>
           </div>
-          <div class="col-lg-9 col-md-12">
+          <div class="col-lg-8 col-md-12">
             <div class="swiper myteam">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1257,7 +1439,15 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+      
+              <div class="swiper-arrow-btn">
+                <div class="swiper-button-prev">
+                  <img src="/assets/images/home/team/left-arrow.svg" alt="">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="/assets/images/home/team/right-arrow.svg" alt="">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1850,7 +2040,7 @@
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <!-- Nice Select Js -->
-
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/jquery.nice-select.js"></script>
     <!-- ===== main js -->
