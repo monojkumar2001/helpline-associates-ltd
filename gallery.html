@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Site -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Title -->
+    <title>Helpline - Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Bootstrap Icon CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="./assets/bootstrap-icons-1.10.4/font/bootstrap-icons.css"
+    /> -->
+
+    <!-- Animate CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/animate.css" /> -->
+    <!-- Video Modal CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.yu2fvl.css" /> -->
+    <!-- Owl Carousel CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
+    <!-- Main Style CSS -->
+
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Responsive Style CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ================
+        Loading Window
+    ================= -->
+    <!-- <div class="helpline-loading">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+
+    <!-- =====================
+        Helpline Header Menu
+    ====================== -->
+    <header id="sticky-header">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-5">
+            <div class="mobile-flex">
+              <!-- Logo -->
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/images/logo.svg" alt="nexigen" />
+                </a>
+              </div>
+              <!-- Mobile Hamburger Menu -->
+              <div class="hamburger-menu">
+                <img src="/assets/images/home/menu.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="header-menu">
+              <!-- Mobile Menu Close Button -->
+              <div class="close-btn">
+                <img src="/assets/images/home/close.svg" alt="" />
+              </div>
+              <!-- Only Show On Mobile Devices -->
+
+              <!-- Menu -->
+              <div class="header-right">
+                <ul>
+                  <li class="active">
+                    <a class="sub-btn" href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Faq</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Testimonial</a>
+                  </li>
+                </ul>
+
+                <div class="select-country">
+                  <div class="custom-select" style="width: 200px">
+                    <div id="select" class="select">
+                      <div class="option" value="1" data-image="">
+                        <img src="/assets/images/home/icons/en.svg" alt="" />
+                        <p>En</p>
+                      </div>
+                      <div
+                        class="option"
+                        value="2"
+                        data-image="/assets/images/home/icons/en.svg"
+                      >
+                        <img src="/assets/images/home/icons/en.svg" alt="" />
+                        <p>En</p>
+                      </div>
+                      <div
+                        class="option"
+                        value="3"
+                        data-image="/assets/images/home/icons/en.svg"
+                      >
+                        <div>
+                          <img src="/assets/images/home/icons/bn.jpg" alt="" />
+                          <p>BN</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-option" onclick="toggleOptions()">
+                      Select BN
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================
+        Helpline Hero
+    ====================== -->
+    <section class="gallery-details">
+      <div class="container">
+        <div class="service-header">
+          <div class="service-box"></div>
+          <a href="/index.html">Home</a> /
+          <p>Services Details</p>
+        </div>
+        <div class="gallery-content">
+          <div class="gallery-header">
+            <h1 class="service-title">
+              Enjoy Tea Time as you travel at Sultan Tea Gallery
+            </h1>
+            <p>
+              Serving the tea lovers around the globe at the departure lounge,
+              opposite of immigration 2
+            </p>
+            Once you are done with the immigration, our team of expertise will
+            guide you to the departure lounge filled with duty free shops where
+            your eyes will meet a fascinating tea gallery known as
+            <strong>"Sultan Tea Gallery"</strong>, opposite of immigration 2
+            Here you can enjoy some teatime and also purchase Bangladeshi Tea
+            for a wonderful start to your travel journey.
+          </div>
+          <div class="gallery-img">
+            <img src="/assets/images/gallery/1.png" alt="" />
+          </div>
+          <div class="gallery-about">
+            <div class="row align-items-center justify-content-center gap-4">
+              <div class="col-lg-5 col-md-12">
+                <div class="service-img">
+                  <img src="/assets/images/gallery/cup.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-12">
+                <h1 class="service-title">About Sultan Tea</h1>
+                <p class="gallery-about-text">
+                  Our tea originates from the Northern part of Bangladesh,
+                  offering you the freshness of 100% premium quality leaf. The
+                  leaves are carefully hand plucked from our own garden to bring
+                  you the taste of Darjeeling tea through bright color,
+                  attractive liquor and refreshing flavor, giving you lasting
+                  joy, warmth and vitality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-img-wrapper cpt-7">
+            <div class="swiper GalleryImage">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-slider-item">
+                    <img src="/assets/images/gallery/2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider-item">
+                    <img src="/assets/images/gallery/2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider-item">
+                    <img src="/assets/images/gallery/2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-slider-item">
+                    <img src="/assets/images/gallery/2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-gallery-btn">
+                <div class="button-prevs">
+                  <img src="/assets/images/gallery/left-arrow.png" alt="" />
+                </div>
+                <div class="button-nexts">
+                  <img src="/assets/images/gallery/right-arrow.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-text">
+            <p>
+              We serve a range of tea to the respective departing passengers
+              including black tea, green tea, orthodox tea and white tea. To
+              further elevate your travel journey, you can also enjoy some
+              refreshing sips of our famous 'Masala Tea', in addition to our
+              flavorful raw tea, milk tea and lemon tea
+            </p>
+          </div>
+          <div class="gallery-img mt-4">
+            <img src="/assets/images/gallery/3.png" alt="" />
+          </div>
+          <div class="gallery-img mt-2">
+            <img src="/assets/images/gallery/4.png" alt="" />
+          </div>
+          <div class="gallery-text text-center">
+            <p>
+              We serve a range of tea to the respective departing passengers
+              including black tea, green tea, orthodox tea and white tea. To
+              further elevate your travel journey, you can also enjoy some
+              refreshing sips of our famous 'Masala Tea', in addition to our
+              flavorful raw tea, milk tea and lemon tea
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====================
+        Footer 
+    ====================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="/assets/images/home/footer-logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-wrapper">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-list-item">
+                <h3>CONTACT</h3>
+
+                <div class="footer-list">
+                  <span>Email US</span>
+                  <a href="mailto:helplinezia@gmail.com"
+                    >helplinezia@gmail.com</a
+                  >
+                </div>
+                <div class="footer-list">
+                  <span>Email US</span>
+                  <p>01913199199, 01913665544</p>
+                </div>
+                <div class="footer-list">
+                  <small
+                    >Room # 2, Passenger Terminal # 2, Gate # 27, (1st Floor),
+                    Hazrat Shahjalal Int. Airport, Dhaka, Bangladesh.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-list-item footer-list-item-link">
+                <h3>QUICK LINKS</h3>
+
+                <div class="quick-link-item">
+                  <ul>
+                    <li>
+                      <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#about">Services</a>
+                    </li>
+                    <li>
+                      <a href="#about">Careers</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="#faq">Faq</a>
+                    </li>
+                    <li>
+                      <a href="#about">Testimonial</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-list-item footer-list-item-social">
+                <h3>FOLLOW US</h3>
+
+                <div class="social-icon-list">
+                  <div class="social-icon">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.33021 14.6671V8.08902H8.96279L9.3541 5.51349H6.33021V3.87298C6.33021 3.12978 6.57585 2.62093 7.8412 2.62093H9.44455V0.324706C8.66478 0.254078 7.88024 0.220369 7.0957 0.222777C4.76875 0.222777 3.17111 1.42025 3.17111 3.61856V5.50868H0.555664V8.08421H3.17682V14.6671H6.33021Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_936_2524)">
+                        <rect width="16" height="16" fill="white" />
+                        <path
+                          d="M15.9968 16.0005V15.9998H16.0008V10.1318C16.0008 7.26114 15.3828 5.0498 12.0268 5.0498C10.4135 5.0498 9.33083 5.93514 8.88883 6.77447H8.84216V5.3178H5.66016V15.9998H8.9735V10.7105C8.9735 9.31781 9.2375 7.97114 10.9622 7.97114C12.6615 7.97114 12.6868 9.56047 12.6868 10.7998V16.0005H15.9968Z"
+                          fill="#FFFFFF "
+                        />
+                        <path
+                          d="M0.263672 5.31836H3.58101V16.0004H0.263672V5.31836Z"
+                          fill="#FFFFFF"
+                        />
+                        <path
+                          d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z"
+                          fill="#FFFFFF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_936_2524">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="social-icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.4913 4.72413C15.4554 3.9106 15.3239 3.3513 15.1354 2.86666C14.941 2.35223 14.6419 1.89166 14.25 1.50879C13.8671 1.11996 13.4035 0.817821 12.8951 0.626443C12.4076 0.437986 11.8512 0.306428 11.0377 0.270559C10.2181 0.231653 9.95791 0.222656 7.87916 0.222656C5.80041 0.222656 5.54021 0.231653 4.72364 0.267521C3.91011 0.30339 3.35081 0.435065 2.86629 0.623405C2.35175 0.817821 1.89118 1.11692 1.5083 1.50879C1.11947 1.89166 0.81745 2.35527 0.625955 2.86374C0.437497 3.3513 0.30594 3.90756 0.270071 4.72109C0.231164 5.5407 0.222168 5.80089 0.222168 7.87965C0.222168 9.9584 0.231164 10.2186 0.267033 11.0352C0.302902 11.8487 0.434577 12.408 0.623034 12.8926C0.81745 13.4071 1.11947 13.8676 1.5083 14.2505C1.89118 14.6393 2.35478 14.9415 2.86326 15.1329C3.35081 15.3213 3.90707 15.4529 4.72072 15.4887C5.53717 15.5247 5.79748 15.5336 7.87624 15.5336C9.95499 15.5336 10.2152 15.5247 11.0318 15.4887C11.8453 15.4529 12.4046 15.3213 12.8891 15.1329C13.9181 14.735 14.7316 13.9215 15.1294 12.8926C15.3178 12.4051 15.4495 11.8487 15.4853 11.0352C15.5212 10.2186 15.5302 9.9584 15.5302 7.87965C15.5302 5.80089 15.5272 5.5407 15.4913 4.72413ZM14.1125 10.9753C14.0796 11.7231 13.954 12.1269 13.8493 12.3961C13.592 13.0631 13.0626 13.5925 12.3956 13.8498C12.1264 13.9544 11.7197 14.08 10.9749 14.1129C10.1673 14.1489 9.92508 14.1577 7.8822 14.1577C5.83931 14.1577 5.59407 14.1489 4.78942 14.1129C4.04167 14.08 3.63788 13.9544 3.36869 13.8498C3.03676 13.7271 2.73462 13.5327 2.48938 13.2784C2.23514 13.0301 2.04073 12.731 1.91805 12.3991C1.81336 12.1299 1.68776 11.7231 1.65493 10.9784C1.61895 10.1708 1.61007 9.92849 1.61007 7.88561C1.61007 5.84272 1.61895 5.59748 1.65493 4.79295C1.68776 4.04519 1.81336 3.64141 1.91805 3.37222C2.04073 3.04017 2.23514 2.73814 2.49242 2.49279C2.74058 2.23855 3.03968 2.04414 3.37173 1.92157C3.64092 1.81689 4.04774 1.69129 4.79246 1.65834C5.60003 1.62247 5.84235 1.61348 7.88512 1.61348C9.93104 1.61348 10.1732 1.62247 10.9779 1.65834C11.7256 1.69129 12.1294 1.81689 12.3986 1.92157C12.7306 2.04414 13.0327 2.23855 13.2779 2.49279C13.5322 2.74107 13.7266 3.04017 13.8493 3.37222C13.954 3.64141 14.0796 4.04811 14.1125 4.79295C14.1484 5.60052 14.1574 5.84272 14.1574 7.88561C14.1574 9.92849 14.1484 10.1678 14.1125 10.9753Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M7.87849 3.94629C5.70709 3.94629 3.94531 5.70795 3.94531 7.87947C3.94531 10.051 5.70709 11.8127 7.87849 11.8127C10.05 11.8127 11.8117 10.051 11.8117 7.87947C11.8117 5.70795 10.05 3.94629 7.87849 3.94629ZM7.87849 10.4308C6.4698 10.4308 5.32714 9.28828 5.32714 7.87947C5.32714 6.47066 6.4698 5.32811 7.87849 5.32811C9.28731 5.32811 10.4299 6.47066 10.4299 7.87947C10.4299 9.28828 9.28731 10.4308 7.87849 10.4308Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M12.8855 3.79109C12.8855 4.29806 12.4744 4.70913 11.9674 4.70913C11.4604 4.70913 11.0493 4.29806 11.0493 3.79109C11.0493 3.284 11.4604 2.87305 11.9674 2.87305C12.4744 2.87305 12.8855 3.284 12.8855 3.79109Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-copy-text">
+          © 2024 - All rights Resaved Helpline Associates Ltd
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- jQuery -->
+    <!-- <script src="./assets/js/jquery-3.6.2.min.js"></script> -->
+    <!-- Bootstrap Popper JS -->
+    <!-- <script src="./assets/js/popper.min.js"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Nice Select Js -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.nice-select.js"></script>
+    <!-- ===== main js -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/step.js"></script>
+    <script src="./assets/js/step2.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+      // Get DOM elements
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const headerMenu = document.getElementById("header-menu");
+      const closeBtn = document.getElementById("close-btn");
+
+      // Add click event listener to hamburger menu icon
+      hamburgerMenu.addEventListener("click", function () {
+        headerMenu.classList.add("open");
+      });
+
+      // Add click event listener to close button
+      closeBtn.addEventListener("click", function () {
+        headerMenu.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

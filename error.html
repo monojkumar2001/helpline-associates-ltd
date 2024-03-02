@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Site -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Title -->
+    <title>Helpline - Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Bootstrap Icon CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="./assets/bootstrap-icons-1.10.4/font/bootstrap-icons.css"
+    /> -->
+
+    <!-- Animate CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/animate.css" /> -->
+    <!-- Video Modal CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.yu2fvl.css" /> -->
+    <!-- Owl Carousel CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
+    <!-- Main Style CSS -->
+
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Responsive Style CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ================
+        Loading Window
+    ================= -->
+    <!-- <div class="helpline-loading">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+
+    <!-- =====================
+        Helpline Header Menu
+    ====================== -->
+    <header id="sticky-header">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-5">
+            <div class="mobile-flex">
+              <!-- Logo -->
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/images/logo.svg" alt="nexigen" />
+                </a>
+              </div>
+              <!-- Mobile Hamburger Menu -->
+              <div class="hamburger-menu">
+                <img src="/assets/images/home/menu.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="header-menu">
+              <!-- Mobile Menu Close Button -->
+              <div class="close-btn">
+                <img src="/assets/images/home/close.svg" alt="" />
+              </div>
+              <!-- Only Show On Mobile Devices -->
+
+              <!-- Menu -->
+              <div class="header-right">
+                <ul>
+                  <li class="active">
+                    <a class="sub-btn" href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Faq</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#">Testimonial</a>
+                  </li>
+                </ul>
+
+                <div class="select-country">
+                  <div class="custom-select" style="width: 200px">
+                    <div id="select" class="select">
+                      <div class="option" value="1" data-image="">
+                        <img src="/assets/images/home/icons/en.svg" alt="" />
+                        <p>En</p>
+                      </div>
+                      <div
+                        class="option"
+                        value="2"
+                        data-image="/assets/images/home/icons/en.svg"
+                      >
+                        <img src="/assets/images/home/icons/en.svg" alt="" />
+                        <p>En</p>
+                      </div>
+                      <div
+                        class="option"
+                        value="3"
+                        data-image="/assets/images/home/icons/en.svg"
+                      >
+                        <div>
+                          <img src="/assets/images/home/icons/bn.jpg" alt="" />
+                          <p>BN</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-option" onclick="toggleOptions()">
+                      Select BN
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================
+        Helpline Hero
+    ====================== -->
+    <section class="error">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <div class="error-content">
+              <div class="error-img">
+                <img src="/assets/images/error.png" alt="" />
+              </div>
+              <div>
+                <h1>Oops... Looks Like You Goot Lost</h1>
+                <p>
+                  The page you are searching for may have been removed,
+                  undergone a name change, or is currently unavailable.
+                </p>
+              </div>
+              <a href="/index.html" class="custom-btn"> Back to Home Page </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- jQuery -->
+    <!-- <script src="./assets/js/jquery-3.6.2.min.js"></script> -->
+    <!-- Bootstrap Popper JS -->
+    <!-- <script src="./assets/js/popper.min.js"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Nice Select Js -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.nice-select.js"></script>
+    <!-- ===== main js -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/step.js"></script>
+    <script src="./assets/js/step2.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+      // Get DOM elements
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const headerMenu = document.getElementById("header-menu");
+      const closeBtn = document.getElementById("close-btn");
+
+      // Add click event listener to hamburger menu icon
+      hamburgerMenu.addEventListener("click", function () {
+        headerMenu.classList.add("open");
+      });
+
+      // Add click event listener to close button
+      closeBtn.addEventListener("click", function () {
+        headerMenu.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

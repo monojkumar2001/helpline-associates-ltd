@@ -24,11 +24,15 @@
     <!-- Title -->
     <title>Helpline - Home</title>
 
-    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -517,7 +521,7 @@
 
                     <!-- Add more steps as needed -->
 
-                    <div class="col-md-12 mt-3 d-flex align-items-center gap-2">
+                    <div class="col-md-12 mt-3 d-flex align-items-center gap-4">
                       <div
                         class="custom-btn w-100 travel-btn travel-back-btn"
                         style="display: none"
@@ -833,23 +837,280 @@
                         </div>
                       </div>
                     </div>
+                    <!-- Step 2: Additional Details -->
+                    <div class="travel-form" id="steps4" style="display: none">
+                      <div class="travel-form-details">
+                        <h4>Mobile Banking</h4>
+                        <div class="travel-bank-text">
+                          <p>Total Cost: <span>2,000 TK</span></p>
+                        </div>
+                      </div>
+
+                      <div class="travel-bkash-number">
+                        <label for="">bKash Personal Number</label>
+                        <div class="travel-input-bkash-item">
+                          <input
+                            type="text"
+                            value="01122365894"
+                            id="phoneNumber"
+                          />
+                          <div id="copyButton">
+                            <span>Copy</span>
+                            <img
+                              src="/assets/images/home/icons/copy.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="travel-upload-wrapper">
+                        <div class="upload-img-header">
+                          <h4>Upload your transaction image</h4>
+                          <div class="upload-img-status">
+                            <label class="toggle">
+                              <input class="toggle-checkbox" type="checkbox" />
+                              <div class="toggle-switch"></div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="upload-img-content">
+                          <div class="upload-img">
+                            <img
+                              id="previewImage"
+                              src="/assets/images/home/icons/upload.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="upload-input-fuild">
+                            <input
+                              type="file"
+                              accept="image/*"
+                              id="imageInput"
+                              onchange="previewFile()"
+                            />
+                            <p>Drag and drop or Browse</p>
+                            <p>Png, Jpg, Gif (Max 5MB)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="upload-or">
+                        <div class="or-line"></div>
+                        <p>or</p>
+                        <div class="or-line"></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Your bKash Account No.* </label>
+
+                                <input
+                                  type="text"
+                                  name=""
+                                  id=""
+                                  placeholder="Enter Account No"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-input-item">
+                                <label for="">Amount (BDT) </label>
+
+                                <input
+                                  type="text"
+                                  name=""
+                                  id=""
+                                  placeholder="Enter Amount"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Step 2: Additional Details -->
+                    <div class="travel-form" id="steps5" style="display: none">
+                      <div class="travel-form-details">
+                        <h4>Bank Payment</h4>
+                        <div class="travel-bank-text">
+                          <p>Total Cost: <span>2,000 TK</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">Account Number </label>
+                            <div class="travel-input-bkash-item">
+                            
+                              <p>1334010189056</p>
+                              <div id="copyButton">
+                                <span>Copy</span>
+                                <img
+                                  src="/assets/images/home/icons/copy.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">Branch Name </label>
+                            <div class="travel-input-bkash-item">
+                              
+                              <p>Kawran Bazar Branch</p>
+                              <div id="copyButton">
+                                <span>Copy</span>
+                                <img
+                                  src="/assets/images/home/icons/copy.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">Account Holder Name</label>
+                            <div class="travel-input-bkash-item">
+                              <p>Andrew Kilan</p>
+                              <div id="copyButton">
+                                <span>Copy</span>
+                                <img
+                                  src="/assets/images/home/icons/copy.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">SWIFT/BIC Code </label>
+                            <div class="travel-input-bkash-item">
+                              <p>CIBLBDDH XXX</p>
+                              <div id="copyButton">
+                                <span>Copy</span>
+                                <img
+                                  src="/assets/images/home/icons/copy.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">District Name </label>
+                            <div class="travel-input-bkash-item">
+                    
+                              <p>Dhaka</p>
+                              <div id="copyButton">
+                                <span>Copy</span>
+                                <img
+                                  src="/assets/images/home/icons/copy.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="travel-bkash-number">
+                            <label for="">Upload your transaction image </label>
+                            <div class="travel-input-bkash-item">
+                              <p>Drag and drop</p>
+                             
+                              <div id="copyButton">
+                               
+                                <img
+                                  src="/assets/images/home/icons/drop-icon.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="upload-or">
+                        <div class="or-line"></div>
+                        <p>or</p>
+                        <div class="or-line"></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-input-item">
+                            <label for="">Your Account Name* </label>
+
+                            <input
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="Type here..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-input-item">
+                            <label for="">Your Account Number* </label>
+
+                            <input
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="Type here..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-input-item">
+                            <label for="">Branch Name </label>
+
+                            <input
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="Type here..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-input-item">
+                            <label for="">Amount (BDT)</label>
+
+                            <input
+                              type="text"
+                              name=""
+                              id=""
+                              placeholder="Type here..."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     <!-- Add more steps as needed -->
 
-                    <div class="col-md-12 mt-3 d-flex align-items-center gap-2">
+                    <div class="col-md-12 mt-3 d-flex align-items-center gap-4">
                       <div
-                        class="custom-btn w-100 travel-btn travel-back-btn2"
-                        style="display: none"
-                        onclick="previousSteps()"
-                      >
-                        Back
-                      </div>
-                      <div
-                        class="custom-btn w-100 travel-btn travel-next-btn"
-                        onclick="nextSteps()"
-                      >
-                        Next
-                      </div>
+                      class="custom-btn w-100 travel-btn travel-back-btn2"
+                      style="display: none"
+                      onclick="previousSteps()"
+                    >
+                      Back
+                    </div>
+                    <div
+                    class="custom-btn w-100 travel-btn travel-next-btn"
+                    onclick="nextSteps()"
+                  >
+                    Next
+                  </div>
+               
                     </div>
                   </form>
                 </div>
@@ -917,7 +1178,7 @@
     <!-- =====================
         About US
     ====================== -->
-    <section class="about-us cpy-6">
+    <section class="about-us cpb-7 cpt-6">
       <div class="container">
         <div class="about-us-wrapper">
           <div class="row align-items-center">
@@ -951,7 +1212,7 @@
                   and experienced team to extend personalized services to their
                   valued passengers with utmost care.
                 </p>
-                <a href="/gallery" class="gallery-link">
+                <a href="/gallery.html" class="gallery-link">
                   <span>Visit Our Sultan Tea Gallery</span>
                   <img src="/assets/images/home/about/right-arow.svg" alt="" />
                 </a>
@@ -1004,8 +1265,8 @@
                 <button class="about-us-video-btn">
                   <img src="/assets/images/home/about/video-icon.svg" alt="" />
                 </button>
-               
-<!--              
+
+                <!--              
               <video id="my-video" class="full-width-video" controls>
                 <source src="/assets/video/video.mp4" type="video/mp4" />
               </video>
@@ -1016,51 +1277,120 @@
               </div>
             </div>
           </div>
-
-         
         </div>
       </div>
     </section>
 
+    <!-- =====================
+       Our Service
+    ====================== -->
+    <section class="our-service cpb-7">
+      <div class="container">
+        <div class="our-service-title">
+          <h1>Elevating Your Airport Experience with Our Services</h1>
+        </div>
+        <div class="our-service-wrapper">
+          <div class="our-service-card-item">
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/1.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+          </div>
+          <div class="our-service-card-item">
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/2.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/3.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+          </div>
+          <div class="our-service-card-item">
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/4.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/5.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+          </div>
+          <div class="our-service-card-item">
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/6.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+            <a
+              href="/service-details.html"
+              class="our-service-card our-service-card-seven"
+            >
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/7.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+            <a href="/service-details.html" class="our-service-card">
+              <div class="our-service-img">
+                <img src="/assets/images/home/service/8.png" alt="" />
+              </div>
+              <p>VIP Departure</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- =====================
        Message 
     ====================== -->
     <section class="message-md cpb-6">
       <div class="container">
         <div class="message-wrapper">
-         <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="row">
-              <div class="col-lg-5 col-md-12">
-                <div class="message-left">
-                  <div class="message-img">
-                    <img src="/assets/images/home/message-img.png" alt="" />
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="row">
+                <div class="col-lg-5 col-md-12">
+                  <div class="message-left">
+                    <div class="message-img">
+                      <img src="/assets/images/home/message-img.png" alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-7 col-md-12">
-                <div class="message-right">
-                  <h2>Message from Md</h2>
-                  <p>
-                    Embark on a seamless airport travel with Helpline Ltd,
-                    operating since 2006. With a vision to provide the utmost
-                    support to our passengers, we strive to redefine travel with
-                    premium airport services tailored just for you. From meet and
-                    greet to lounge access, we've got it all covered. We hope you
-                    enjoy travelling with Helpline Ltd.
-                  </p>
-                  <div class="message-name">
-                    <div class="message-line"></div>
-                    <span>Md. Faizul Islam</span>
-                  </div>
-                  <div class="message-line-icon">
-                    <img src="/assets/images/home/message-line.svg" alt="" />
+                <div class="col-lg-7 col-md-12">
+                  <div class="message-right">
+                    <h2>Message from Md</h2>
+                    <p>
+                      Embark on a seamless airport travel with Helpline Ltd,
+                      operating since 2006. With a vision to provide the utmost
+                      support to our passengers, we strive to redefine travel
+                      with premium airport services tailored just for you. From
+                      meet and greet to lounge access, we've got it all covered.
+                      We hope you enjoy travelling with Helpline Ltd.
+                    </p>
+                    <div class="message-name">
+                      <div class="message-line"></div>
+                      <span>Md. Faizul Islam</span>
+                    </div>
+                    <div class="message-line-icon">
+                      <img src="/assets/images/home/message-line.svg" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-         </div>
         </div>
       </div>
     </section>
@@ -1100,8 +1430,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1126,8 +1456,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1156,8 +1486,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1182,8 +1512,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1212,8 +1542,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1238,8 +1568,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1268,8 +1598,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1294,8 +1624,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1324,8 +1654,8 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
@@ -1350,14 +1680,13 @@
                       </div>
                       <p class="client-text">
                         Airport Assistant made my recent business trip
-                        stress-free. Fast-track security and expert guidance made
-                        it a staple for my travels. Highly recommend!
+                        stress-free. Fast-track security and expert guidance
+                        made it a staple for my travels. Highly recommend!
                       </p>
                       <p>2:08 AM . JAN 01, 2023</p>
                     </div>
                   </div>
                 </div>
-               
               </div>
               <!-- <div class="swiper-pagination"></div> -->
             </div>
@@ -1439,13 +1768,13 @@
                   </div>
                 </div>
               </div>
-      
+
               <div class="swiper-arrow-btn">
-                <div class="swiper-button-prev">
-                  <img src="/assets/images/home/team/left-arrow.svg" alt="">
+                <div class="button-prev">
+                  <img src="/assets/images/home/team/left-arrow.svg" alt="" />
                 </div>
-                <div class="swiper-button-next">
-                  <img src="/assets/images/home/team/right-arrow.svg" alt="">
+                <div class="button-next">
+                  <img src="/assets/images/home/team/right-arrow.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -1458,7 +1787,7 @@
     ====================== -->
     <section class="faq cpb-7">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-6 col-md-12">
             <div class="faq-content">
               <div class="faq-head">
@@ -1509,7 +1838,30 @@
                     <button>
                       Q2. How can I contact Airport Assistant for assistance?
                     </button>
-                    <img src="/assets/images/home/icons/Plus.svg" alt="" />
+                    <div class="plus-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.75 12H20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.75V20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </h2>
                   <div
                     id="collapseTwo"
@@ -1535,7 +1887,30 @@
                     <button>
                       Q3. What services does Airport Assistant provide?
                     </button>
-                    <img src="/assets/images/home/icons/Plus.svg" alt="" />
+                    <div class="plus-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.75 12H20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.75V20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </h2>
                   <div
                     id="collapseThree"
@@ -1561,7 +1936,30 @@
                     <button>
                       Q4. Is Airport Assistant available at all airports?
                     </button>
-                    <img src="/assets/images/home/icons/Plus.svg" alt="" />
+                    <div class="plus-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.75 12H20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.75V20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </h2>
                   <div
                     id="collapseFour"
@@ -1587,7 +1985,30 @@
                     <button>
                       Q5. How do I book assistance through the website?
                     </button>
-                    <img src="/assets/images/home/icons/Plus.svg" alt="" />
+                    <div class="plus-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.75 12H20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.75V20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </h2>
                   <div
                     id="collapseFive"
@@ -1614,7 +2035,30 @@
                       Q6. Are your services available for both domestic and
                       international flights?
                     </button>
-                    <img src="/assets/images/home/icons/Plus.svg" alt="" />
+                    <div class="plus-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.75 12H20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.75V20.25"
+                          stroke="#A5A5A5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </h2>
                   <div
                     id="collapseSix"
@@ -1642,7 +2086,7 @@
     <!-- =====================
         Contact Us
     ====================== -->
-    <section class="contact-us">
+    <section class="contact-us cpb-7">
       <div class="container">
         <div class="contact-us-title">
           <h1>Reach Out to Us for Assistance and Inquiries</h1>
@@ -1760,6 +2204,9 @@
                     </div>
                   </div>
                 </div>
+                <div class="contact-shap">
+                  <img src="/assets/images/home/contact-shap.svg" alt="" />
+                </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -1851,7 +2298,7 @@
     <!-- =====================
         Image Silder
     ====================== -->
-    <section class="cpy-7">
+    <section class="cpb-7">
       <div class="swiper myImage">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -1896,7 +2343,7 @@
       <div class="container">
         <div class="footer-logo">
           <a href="/">
-            <img src="/assets/images/logo.svg" alt="" />
+            <img src="/assets/images/home/footer-logo.svg" alt="" />
           </a>
         </div>
         <div class="footer-wrapper">
@@ -1907,7 +2354,9 @@
 
                 <div class="footer-list">
                   <span>Email US</span>
-                  <a href="helplinezia@gmail.com">helplinezia@gmail.com</a>
+                  <a href="mailto:helplinezia@gmail.com"
+                    >helplinezia@gmail.com</a
+                  >
                 </div>
                 <div class="footer-list">
                   <span>Email US</span>
@@ -1922,7 +2371,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list-item">
+              <div class="footer-list-item footer-list-item-link">
                 <h3>QUICK LINKS</h3>
 
                 <div class="quick-link-item">
@@ -1952,7 +2401,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list-item">
+              <div class="footer-list-item footer-list-item-social">
                 <h3>FOLLOW US</h3>
 
                 <div class="social-icon-list">
@@ -2027,11 +2476,15 @@
             </div>
           </div>
         </div>
+        <p class="footer-copy-text">
+          © 2024 - All rights Resaved Helpline Associates Ltd
+        </p>
       </div>
     </footer>
-
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <!-- jQuery -->
     <!-- <script src="./assets/js/jquery-3.6.2.min.js"></script> -->
     <!-- Bootstrap Popper JS -->
