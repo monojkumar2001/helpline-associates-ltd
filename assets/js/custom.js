@@ -59,31 +59,33 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".myteam", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".button-next",
-      prevEl: ".button-prev",
+var swiper = new Swiper(".myteam", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true, // Enable loop mode
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
-  });
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 });
-
 
 
   var swiper = new Swiper(".myImage", {
@@ -199,3 +201,5 @@ document.getElementById("copyButton").addEventListener("click", function() {
   // Optionally, provide some visual feedback that the text has been copied
   alert("Phone number copied to clipboard: " + phoneNumberInput.value);
 });
+
+

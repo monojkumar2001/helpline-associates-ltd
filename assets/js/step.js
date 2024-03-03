@@ -53,46 +53,25 @@ $(document).ready(function() {
 
 
 
+  // Select Language
+const selectCountry = document.querySelector(".select-country");
+const list = document.querySelector(".select-list"); // Changed to select-list
+const selected = document.querySelector(".selected");
+const selectedImg = document.querySelector(".selectedImg");
 
+selectCountry.addEventListener("click", () => {
+  list.classList.toggle("show");
+});
 
-// Toggle the display of options
-function toggleOptions() {
-    var options = document.getElementById("select");
-    options.classList.toggle("show");
+list.addEventListener("click", (e) => {
+  const listItem = e.target.closest(".select-item");
+  if (listItem) {
+    const img = listItem.querySelector("img");
+    const text = listItem.querySelector(".select-text").innerHTML;
+
+    selectedImg.src = img.src;
+    selected.innerHTML = text;
+
+    list.classList.remove("close");
   }
-  
-  // Handle selection of an option
-  document.querySelectorAll('.option').forEach(item => {
-    item.addEventListener('click', event => {
-      var selectedOption = event.currentTarget;
-      var value = selectedOption.getAttribute("value");
-      var text = selectedOption.textContent;
-      var imageSrc = selectedOption.getAttribute("data-image");
-  
-      // Clear the selected option display
-      var selectedDisplay = document.querySelector('.selected-option');
-      selectedDisplay.innerHTML = ''; // Clear existing content
-  
-      // Create an <img> element for the image
-      var image = document.createElement("img");
-      image.src = imageSrc || ''; // If image source is not provided, set an empty string
-      image.alt = text; // Use the text as alt attribute for accessibility
-      selectedDisplay.appendChild(image);
-  
-      // Append the text to the selected option display
-      var textNode = document.createTextNode("Select " + text);
-      selectedDisplay.appendChild(textNode);
-  
-      // Optionally, you can hide the options after selection
-      var options = document.getElementById("select");
-      options.classList.remove("show");
-  
-      // Mark the selected option as selected
-      var selectedOptions = document.querySelectorAll('.option');
-      selectedOptions.forEach(option => {
-        option.classList.remove('selected');
-      });
-      selectedOption.classList.add('selected');
-    });
-  });
-  
+});
