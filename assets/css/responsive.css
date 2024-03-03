@@ -26,6 +26,62 @@
     left: 29%;
     bottom: -9%;
   }
+  .about-us-right {
+    margin-top: 40px;
+    text-align: center;
+}
+.about-us-img img {
+  width: 90%;
+}
+.about-us-count-list {
+  width: 100%;
+}
+.about-us-count-lists-1 {
+  padding-right: 0px;
+}
+.about-us-count-lists.about-us-count-lists-2 {
+  padding-left: 0px;
+}
+.about-us-count-right {
+  margin-top: 60px;
+}
+.about-us-rokect-img {
+  position: absolute;
+  left: 2%;
+  top: -11%;
+}
+.message-line-icon {
+  display: none;
+}
+.message-name {
+
+  justify-content: center;
+}
+.message-right {
+margin-top: 40px;
+text-align: center;
+}
+.message-img {
+  width: 80%;
+  margin: auto;
+}
+.team-member-content {
+  margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.faq-img {
+margin-top: 40px;
+}
+.faq-head {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-us-title h1 {
+  width: 80%;
+
+}
 }
 @media only screen and (max-width: 768px) {
   .hero-img-content {
@@ -41,6 +97,9 @@
     grid-template-columns: 1fr 1fr;
     height: 100%;
   }
+  .trusted-client-img ul li {
+    height: 100%;
+  }
   .trusted-client-img ul li img {
     width: 100%;
   }
@@ -50,5 +109,20 @@
   }
   .hero-content {
     width: 100%;
+}
+.message-img {
+  width: 100%;
+}
+
+.client-user-items {
+  padding: 0 0px 0 20px ;
+  margin-right: 10px;
+}
+.faq-content-list-con {
+  padding: 30px 15px;
+}
+.contact-us-title h1 {
+  width: 100%;
+
 }
 }

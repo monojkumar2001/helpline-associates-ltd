@@ -23,7 +23,7 @@ wind.on('scroll', function () {
 });
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4.3,
+  slidesPerView: 2,
   spaceBetween: 20,
   freeMode: true,
   loop: true, // Enable continuous loop
@@ -43,9 +43,13 @@ var swiper = new Swiper(".mySwiper", {
     slideShadows: false, // Disable slide shadows
   },
   breakpoints: {
-    768: {
+    0: {
       slidesPerView: 1,
       spaceBetween: 10,
+    },
+    568: {
+      slidesPerView: 2,
+      spaceBetween: 15,
     },
     992: {
       slidesPerView: 2,
@@ -95,6 +99,24 @@ var swiper = new Swiper(".myteam", {
     autoplay: {
         delay: 2000, // Adjust the delay as needed
         disableOnInteraction: false,
+    },
+    breakpoints: {
+      360: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
     },
     navigation: {
       nextEl: ".swiper-button-next",
