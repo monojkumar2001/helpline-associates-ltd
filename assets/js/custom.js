@@ -1,8 +1,5 @@
 // Hamburger Menu
-$('.sub-btn').click(function(event){
-  $(this).next('.submenu').slideToggle();
-  event.preventDefault();
-});
+
 $('.hamburger-menu').click(function() {
   $('.header-menu').addClass('active');
 });

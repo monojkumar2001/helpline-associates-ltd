@@ -58,7 +58,7 @@
     <header id="sticky-header">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-12">
             <div class="mobile-flex">
               <!-- Logo -->
               <div class="logo">
@@ -83,23 +83,23 @@
               <!-- Menu -->
               <div class="header-right">
                 <ul>
-                  <li class="active">
-                    <a class="sub-btn" href="#">About Us</a>
+                  <li >
+                    <a class="sub-btn" href="#about">About Us</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Services</a>
+                    <a class="sub-btn" href="#serices">Services</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Our Team</a>
+                    <a class="sub-btn" href="#team">Our Team</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Gallery</a>
+                    <a class="sub-btn" href="/gallery.html">Gallery</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Faq</a>
+                    <a class="sub-btn" href="#faq">Faq</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Testimonial</a>
+                    <a class="sub-btn" href="#testimonial">Testimonial</a>
                   </li>
                 </ul>
 
@@ -1156,7 +1156,7 @@
     <!-- =====================
         About US
     ====================== -->
-    <section class="about-us cpb-7 cpt-6">
+    <section id="about" class="about-us cpb-7 cpt-6">
       <div class="container">
         <div class="about-us-wrapper">
           <div class="row align-items-center">
@@ -1280,13 +1280,13 @@
     <!-- =====================
        Our Service
     ====================== -->
-    <!-- <section class="our-service cpb-7">
+    <section class="our-service cpb-7">
       <div class="container">
         <div class="our-service-title">
           <h1>Elevating Your Airport Experience with Our Services</h1>
         </div>
         <div class="our-service-wrapper">
-          <div class="our-service-card-item">
+          <div class="our-service-card-item item-1">
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/1.png" alt="" />
@@ -1294,40 +1294,40 @@
               <p>VIP Departure</p>
             </a>
           </div>
-          <div class="our-service-card-item">
+          <div class="our-service-card-item item-2">
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/2.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>On-arrival visa assistance</p>
             </a>
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/3.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>Meet and Assistance</p>
             </a>
           </div>
-          <div class="our-service-card-item">
+          <div class="our-service-card-item item-3">
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/4.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>Special service for group tour</p>
             </a>
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/5.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>Internet Service and Printing</p>
             </a>
           </div>
-          <div class="our-service-card-item">
+          <div class="our-service-card-item item-4">
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/6.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>Ticket Confirmation and Reconfirmation</p>
             </a>
             <a
               href="/service-details.html"
@@ -1336,18 +1336,18 @@
               <div class="our-service-img">
                 <img src="/assets/images/home/service/7.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <h5>Special service to children, disabled, and senior citizens</h5>
             </a>
             <a href="/service-details.html" class="our-service-card">
               <div class="our-service-img">
                 <img src="/assets/images/home/service/8.png" alt="" />
               </div>
-              <p>VIP Departure</p>
+              <p>Hotel Reservation</p>
             </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- =====================
        Message 
     ====================== -->
@@ -2460,15 +2460,8 @@
       </div>
     </footer>
     <!-- Swiper JS -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <!-- jQuery -->
-    <!-- <script src="./assets/js/jquery-3.6.2.min.js"></script> -->
-    <!-- Bootstrap Popper JS -->
-    <!-- <script src="./assets/js/popper.min.js"></script> -->
-    <!-- Bootstrap JS -->
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <!-- Nice Select Js -->
@@ -2481,24 +2474,5 @@
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/step.js"></script>
     <script src="./assets/js/step2.js"></script>
-
-    <!-- Initialize Swiper -->
-
-    <script>
-      // Get DOM elements
-      const hamburgerMenu = document.getElementById("hamburger-menu");
-      const headerMenu = document.getElementById("header-menu");
-      const closeBtn = document.getElementById("close-btn");
-
-      // Add click event listener to hamburger menu icon
-      hamburgerMenu.addEventListener("click", function () {
-        headerMenu.classList.add("open");
-      });
-
-      // Add click event listener to close button
-      closeBtn.addEventListener("click", function () {
-        headerMenu.classList.remove("open");
-      });
-    </script>
   </body>
 </html>

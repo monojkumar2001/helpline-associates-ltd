@@ -125,4 +125,64 @@ margin-top: 40px;
   width: 100%;
 
 }
+.about-us-icon.about-us-icon-1 {
+
+  left: 0%;
+  bottom: 28%;
+}
+.about-us-right h2 {
+  font-size: 25px;
+  line-height: 150%;
+  font-family: var(--primary-font);
+  margin-bottom: 20px;
+}
+.mobile-flex .logo a img {
+  width: 70%;
+}
+.about-us-right p {
+  font-size: 17px;
+}
+.hero-content h1 {
+  font-size: 25px;
+}
+.hero-form-box button {
+  padding: 7px 10px;
+  height: 70px;
+}
+.travel-form-details-content ul li {
+  padding-bottom: 10px;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.trusted-client-wrapper h3 {
+  font-size: 25px;
+}
+section.trusted-client {
+  padding: 35px 0;
+}
+.about-us-icon {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+a.gallery-link {
+  font-size: 18px;
+}
+.about-us-rokect-img{
+  display: none;
+}
+.about-us-count-right {
+  margin-top: 45px;
+}
+.about-us-count-list p {
+  font-size: 14px;
+}
+.about-us-count-list {
+  border-radius: 7px;
+  padding: 15px;
+}
+.about-us-count-list h5 {
+  font-size: 18px;
+  padding: 17px 0px 5px 0;
+}
 }
