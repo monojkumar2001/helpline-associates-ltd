@@ -397,6 +397,7 @@ section.trusted-client {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 /*  =====================
@@ -551,6 +552,7 @@ a.gallery-link {
   margin: auto;
   text-align: center;
   padding-bottom: 40px;
+  font-weight: 600;
 }
 
 section.our-service {
@@ -564,14 +566,20 @@ section.our-service {
     padding: 10px;
     gap: 10px;
 }
+.our-service-img{
+  width: 100%;
+  height: 100%;
+}
 .our-service-img img {
   width: 100%;
+  height: 100%;
 }
 a.our-service-card {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 a.our-service-card p {
@@ -644,6 +652,7 @@ a.our-service-card.our-service-card-seven h5 {
   line-height: 150%;
   font-family: var(--primary-font);
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .message-right p {
@@ -824,6 +833,7 @@ p.client-text {
   gap: 15px;
   align-items: center;
   justify-content: space-between;
+  transition: 0.4s;
   cursor: pointer; /* Add cursor pointer for indicating it's clickable */
 }
 
@@ -839,7 +849,7 @@ p.client-text {
   transform: rotate(45deg);
 }
 .faq-question-title.active .plus-icon svg path {
-  fill: #d44444 !important; /* Add !important to force the style */
+  fill: #d44444 ; 
 }
 .faq-question-title button {
   border: none;
@@ -951,8 +961,16 @@ p.faq-question-answer {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
 }
-
+.social-icon:hover {
+  background-color: #fff;
+  transform: translateY(-5px);
+}
+.social-icon:hover svg path {
+  fill: #1A98DF;
+}
 .contact-us-wrapper {
   border-radius: 24px;
   background: var(--Gray-00, #fff);
@@ -1060,7 +1078,6 @@ footer.footer {
   color: var(--white-color);
   font-weight: 400;
 }
-
 /*  =====================
         Service Details CSS
     ======================  */

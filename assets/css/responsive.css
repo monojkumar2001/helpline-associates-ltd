@@ -7,6 +7,13 @@
   .trusted-client-img ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .our-service-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
 }
 @media only screen and (max-width: 991px) {
   .hero-right {
@@ -82,6 +89,70 @@ margin-top: 40px;
   width: 80%;
 
 }
+.our-service-wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+.our-service-card-item.item-4 {
+  gap: 20px;
+}
+.our-service-card-item.item-3 {
+  gap: 20px;
+}
+.our-service-card-item.item-2 {
+  gap: 20px;
+}
+.our-service-title h1 {
+  font-size: 30px;
+  width: 70%;
+  padding-bottom: 30px;
+}
+.trusted-client-img ul {
+  grid-template-columns: 1fr  1fr;
+}
+.footer-list-item {
+
+  padding: 0 10px 20px 10px;
+}
+.footer-list {
+  margin-bottom: 15px;
+}
+.footer-list-item.footer-list-item-link {
+  border-right: none;
+  border-left: none;
+  align-items: start;
+}
+.footer-list-item-social {
+  padding-left: 10px;
+}
+.footer-wrapper {
+  padding: 40px 0;
+}
+.image-slider-item img{
+  padding: 0 10px;
+}
+.client-user-item{
+  height: 298px;
+}
+p.client-text {
+  margin-bottom: 30px;
+}
+.contact-us-wrapper {
+  border-radius: 24px;
+  background:none;
+  box-shadow:none;
+}
+.contact-us-left{
+  border-radius: 20px;
+}
+.contact-us-right {
+  margin-top: 40px;
+  background: var(--Gray-00, #fff);
+  box-shadow: 0px 8px 20px 10px #ededf2;
+  border-radius: 20px;
+}
+
 }
 @media only screen and (max-width: 768px) {
   .hero-img-content {
@@ -91,12 +162,66 @@ margin-top: 40px;
   .hero-img img {
     width: 100%;
   }
+  a.our-service-card p{
+    font-size: 18px;
+  }
+  .message-right h2 {
+    font-size: 25px;
+}
+.message-right p {
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+.message-right p {
+  font-size: 17px;
+}
+.client-title h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.client-user-item{
+  height: 288px;
+}
+p.client-text {
+  margin-bottom: 20px;
+}
+.team-member-content h2{
+  font-size: 25px;
+}
+.about-us-right h2 {
+  font-size: 25px;
+}
+.hero-content h1 {
+  font-size: 25px;
+}
+.trusted-client-wrapper h3 {
+  font-size: 25px;
+}
+.our-service-title h1 {
+  font-size: 25px;
+  width: 100%;
+}
+.team-member-item {
+  padding-bottom: 20px;
+}
+.faq-head h2 {
+  font-size: 25px;
+}
+.faq-head {
+  margin-bottom: 20px;
+}
+.contact-us-title h1{
+  font-size: 25px;
+}
+.contact-us-left {
+  padding: 50px 40px;
+}
+.contact-title h2 {
+  font-size: 25px;
+}
 }
 @media only screen and (max-width: 576px) {
-  .trusted-client-img ul {
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-  }
+
   .trusted-client-img ul li {
     height: 100%;
   }
@@ -115,8 +240,11 @@ margin-top: 40px;
 }
 
 .client-user-items {
-  padding: 0 0px 0 20px ;
+  padding: 0 0px 0 10px ;
   margin-right: 10px;
+}
+.client-user-item{
+  height: 320px;
 }
 .faq-content-list-con {
   padding: 30px 15px;
@@ -130,21 +258,14 @@ margin-top: 40px;
   left: 0%;
   bottom: 28%;
 }
-.about-us-right h2 {
-  font-size: 25px;
-  line-height: 150%;
-  font-family: var(--primary-font);
-  margin-bottom: 20px;
-}
+
 .mobile-flex .logo a img {
   width: 70%;
 }
 .about-us-right p {
   font-size: 17px;
 }
-.hero-content h1 {
-  font-size: 25px;
-}
+
 .hero-form-box button {
   padding: 7px 10px;
   height: 70px;
@@ -155,9 +276,7 @@ margin-top: 40px;
   flex-direction: column;
 }
 
-.trusted-client-wrapper h3 {
-  font-size: 25px;
-}
+
 section.trusted-client {
   padding: 35px 0;
 }
@@ -184,5 +303,42 @@ a.gallery-link {
 .about-us-count-list h5 {
   font-size: 18px;
   padding: 17px 0px 5px 0;
+}
+section.our-service {
+  padding: 40px 0;
+}
+.contact-us-left {
+  padding: 30px 20px;
+}
+.contact-shap {
+  position: absolute;
+  top: 1%;
+  right: 0%;
+  display: flex;
+  justify-content: end;
+}
+.contact-shap img{
+  width: 40%;
+}
+.contact-us-left {
+  border-radius: 10px;
+  gap: 25px;
+}
+.connect-us {
+  padding-top: 0px;
+}
+.contact-us-right {
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.about-us-count-left {
+  padding-right: 0px;
+}
+.about-us-img {
+  text-align: right;
+  padding-right: 0px;
+}
+.hero-img-icon {
+  left: -5%;
 }
 }

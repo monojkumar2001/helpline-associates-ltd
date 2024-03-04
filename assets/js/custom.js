@@ -7,7 +7,8 @@ $('.close-btn').click(function() {
   $('.header-menu').removeClass('active');
 });
 
-// sticky Header
+// sticky Header 
+
 var wind = $(window);
 var sticky = $('#sticky-header');
 wind.on('scroll', function () {
@@ -18,6 +19,8 @@ wind.on('scroll', function () {
       sticky.addClass('sticky');
   }
 });
+
+// Service Slider 
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
@@ -44,7 +47,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
     },
-    568: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 15,
     },
@@ -59,11 +62,15 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
+//  Our Team Slider
 var swiper = new Swiper(".myteam", {
   slidesPerView: 3,
   spaceBetween: 30,
-  loop: true, // Enable loop mode
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
@@ -88,13 +95,14 @@ var swiper = new Swiper(".myteam", {
   },
 });
 
+//  Our Image Slider 
 
   var swiper = new Swiper(".myImage", {
     slidesPerView: 5,
     spaceBetween: 10,
-    loop: true, // Enable continuous loop
+    loop: true, 
     autoplay: {
-        delay: 2000, // Adjust the delay as needed
+        delay: 2000, 
         disableOnInteraction: false,
     },
     breakpoints: {
@@ -121,6 +129,8 @@ var swiper = new Swiper(".myteam", {
     },
 });
 
+//  Our Gallery Slider 
+
   var swiper = new Swiper(".GalleryImage", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -136,6 +146,7 @@ var swiper = new Swiper(".myteam", {
     },
 });
 
+//   Hero Form Tap
 
   function showTabContent(tabName) {
     const tabContents = document.getElementsByClassName("tab-content");
@@ -155,16 +166,8 @@ var swiper = new Swiper(".myteam", {
     activeTabButton.classList.add("active");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("my-video");
-  var playButton = document.getElementById("play-video-btn");
 
-  playButton.addEventListener("click", function () {
-    video.play();
-  });
-});
-
-
+//  Faq Active Class 
 document.addEventListener("DOMContentLoaded", function () {
   const faqTitles = document.querySelectorAll(".faq-question-title");
 
@@ -174,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
 function previewFile() {
   var preview = document.getElementById('previewImage');
@@ -203,22 +207,124 @@ function previewFile() {
 }
 
 
-// =========== copy number
-document.getElementById("copyButton").addEventListener("click", function() {
-  // Get the input field
-  var phoneNumberInput = document.getElementById("phoneNumber");
-  
-  // Select the text in the input field
-  phoneNumberInput.select();
-  
-  // Copy the selected text to the clipboard
-  document.execCommand("copy");
-  
-  // Deselect the text
-  phoneNumberInput.setSelectionRange(0, 0);
-  
-  // Optionally, provide some visual feedback that the text has been copied
-  alert("Phone number copied to clipboard: " + phoneNumberInput.value);
-});
+// Hero from   General Passengers
+
+/* =====================
+    Hero Form Step
+======================= */
+let currentStep = 1;
+const backButton = document.querySelector('.travel-back-btn');
+
+function nextStep() {
+    console.log('Next step clicked');
+    const currentStepElement = document.getElementById('step' + currentStep);
+    const nextStepElement = document.getElementById('step' + (currentStep + 1));
+
+    if (currentStep === 1) {
+        backButton.style.display = 'block';
+    }
+
+    if (nextStepElement) {
+        currentStepElement.style.display = 'none';
+        nextStepElement.style.display = 'block';
+        currentStep++;
+    } else {
+        alert('You have reached the end of the form.');
+    }
+}
+
+function previousStep() {
+    console.log('Previous step clicked');
+    if (currentStep > 1) {
+        const currentStepElement = document.getElementById('step' + currentStep);
+        const previousStepElement = document.getElementById('step' + (currentStep - 1));
+
+        currentStepElement.style.display = 'none';
+        previousStepElement.style.display = 'block';
+        currentStep--;
+
+        if (currentStep === 1) {
+            backButton.style.display = 'none';
+        }
+    } else {
+        alert('You are already on the first step.');
+    }
+}
+
+/* =====================
+  Select option
+======================= */
+
+$(document).ready(function() {
+    $('select:not(.ignore)').niceSelect();      
+    FastClick.attach(document.body);
+  });    
 
 
+
+// Hero from  Corporate Passengers
+
+let currentStep2 = 1;
+const backButton2 = document.querySelector('.travel-back-btn2');
+
+function nextSteps() {
+    console.log('Next step clicked');
+    const currentStepElement = document.getElementById('steps' + currentStep2);
+    const nextStepElement = document.getElementById('steps' + (currentStep2 + 1));
+
+    if (currentStep2 === 1) {
+        backButton2.style.display = 'block';
+    }
+
+    if (nextStepElement) {
+        currentStepElement.style.display = 'none';
+        nextStepElement.style.display = 'block';
+        currentStep2++;
+    } else {
+        alert('You have reached the end of the form.');
+    }
+}
+
+function previousSteps() {
+    console.log('Previous step clicked');
+    if (currentStep2 > 1) {
+        const currentStepElement = document.getElementById('steps' + currentStep2);
+        const previousStepElement = document.getElementById('steps' + (currentStep2 - 1));
+
+        currentStepElement.style.display = 'none';
+        previousStepElement.style.display = 'block';
+        currentStep2--;
+
+        if (currentStep2 === 1) {
+            backButton2.style.display = 'none';
+        }
+    } else {
+        alert('You are already on the first step.');
+    }
+}
+
+
+
+  // Select Language
+  const selectCountry = document.querySelector(".select-country");
+  const list = document.querySelector(".select-list"); // Changed to select-list
+  const selected = document.querySelector(".selected");
+  const selectedImg = document.querySelector(".selectedImg");
+  
+  selectCountry.addEventListener("click", () => {
+    list.classList.toggle("show");
+  });
+  
+  list.addEventListener("click", (e) => {
+    const listItem = e.target.closest(".select-item");
+    if (listItem) {
+      const img = listItem.querySelector("img");
+      const text = listItem.querySelector(".select-text").innerHTML;
+  
+      selectedImg.src = img.src;
+      selected.innerHTML = text;
+  
+      list.classList.remove("close");
+    }
+  });
+  
