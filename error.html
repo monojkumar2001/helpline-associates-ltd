@@ -22,40 +22,21 @@
       rel="stylesheet"
     />
     <!-- Title -->
-    <title>Helpline - Home</title>
+    <title>Helpline - Error</title>
 
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- Link Swiper's CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
-    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- Bootstrap Icon CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="./assets/bootstrap-icons-1.10.4/font/bootstrap-icons.css"
-    /> -->
-
-    <!-- Animate CSS -->
-    <!-- <link rel="stylesheet" href="./assets/css/animate.css" /> -->
-    <!-- Video Modal CSS -->
-    <!-- <link rel="stylesheet" href="./assets/css/jquery.yu2fvl.css" /> -->
-    <!-- Owl Carousel CSS -->
-    <!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
-    <!-- Main Style CSS -->
-
     <link rel="stylesheet" href="./assets/css/nice-select.css" />
 
+    <!-- main css -->
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- Responsive Style CSS -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -71,13 +52,13 @@
       </div>
     </div> -->
 
-    <!-- =====================
+   <!-- =====================
         Helpline Header Menu
     ====================== -->
     <header id="sticky-header">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-12">
             <div class="mobile-flex">
               <!-- Logo -->
               <div class="logo">
@@ -102,54 +83,53 @@
               <!-- Menu -->
               <div class="header-right">
                 <ul>
-                  <li class="active">
-                    <a class="sub-btn" href="#">About Us</a>
+                  <li>
+                    <a class="sub-btn" href="#about">About Us</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Services</a>
+                    <a class="sub-btn" href="#service">Services</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Our Team</a>
+                    <a class="sub-btn" href="#team">Our Team</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Gallery</a>
+                    <a class="sub-btn" href="/gallery.html">Gallery</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Faq</a>
+                    <a class="sub-btn" href="#faq">Faq</a>
                   </li>
                   <li>
-                    <a class="sub-btn" href="#">Testimonial</a>
+                    <a class="sub-btn" href="#testimonial">Testimonial</a>
                   </li>
                 </ul>
 
                 <div class="select-country">
-                  <div class="custom-select" style="width: 200px">
-                    <div id="select" class="select">
-                      <div class="option" value="1" data-image="">
-                        <img src="/assets/images/home/icons/en.svg" alt="" />
-                        <p>En</p>
-                      </div>
-                      <div
-                        class="option"
-                        value="2"
-                        data-image="/assets/images/home/icons/en.svg"
-                      >
-                        <img src="/assets/images/home/icons/en.svg" alt="" />
-                        <p>En</p>
-                      </div>
-                      <div
-                        class="option"
-                        value="3"
-                        data-image="/assets/images/home/icons/en.svg"
-                      >
-                        <div>
-                          <img src="/assets/images/home/icons/bn.jpg" alt="" />
-                          <p>BN</p>
-                        </div>
-                      </div>
+                  <div class="select-wrapper">
+                    <img
+                      class="selectedImg"
+                      src="/assets/images/home/icons/en.svg"
+                      alt=""
+                    />
+                    <div class="selected">EN</div>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="/assets/images/home/icons/bottom-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="select-list list">
+                    <div class="select-item">
+                      <img src="/assets/images/home/icons/bn.jpg" alt="" />
+                      <div class="select-text">BN</div>
                     </div>
-                    <div class="selected-option" onclick="toggleOptions()">
-                      Select BN
+                    <div class="select-item">
+                      <img
+                        class="selectedImg"
+                        src="/assets/images/home/icons/en.svg"
+                        alt=""
+                      />
+                      <div class="select-text">EN</div>
                     </div>
                   </div>
                 </div>
@@ -185,15 +165,10 @@
       </div>
     </section>
 
+  
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <!-- jQuery -->
-    <!-- <script src="./assets/js/jquery-3.6.2.min.js"></script> -->
-    <!-- Bootstrap Popper JS -->
-    <!-- <script src="./assets/js/popper.min.js"></script> -->
-    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <!-- Nice Select Js -->
@@ -201,29 +176,7 @@
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/jquery.nice-select.js"></script>
     <!-- ===== main js -->
-    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-    <script src="./assets/js/step.js"></script>
-    <script src="./assets/js/step2.js"></script>
-
-    <!-- Initialize Swiper -->
-
-    <script>
-      // Get DOM elements
-      const hamburgerMenu = document.getElementById("hamburger-menu");
-      const headerMenu = document.getElementById("header-menu");
-      const closeBtn = document.getElementById("close-btn");
-
-      // Add click event listener to hamburger menu icon
-      hamburgerMenu.addEventListener("click", function () {
-        headerMenu.classList.add("open");
-      });
-
-      // Add click event listener to close button
-      closeBtn.addEventListener("click", function () {
-        headerMenu.classList.remove("open");
-      });
-    </script>
   </body>
 </html>
