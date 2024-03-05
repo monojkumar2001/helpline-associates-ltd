@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Site -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Title -->
+    <title>Helpline - Enter Verification Code</title>
+
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Responsive Style CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ================
+        Loading Window
+    ================= -->
+    <!-- <div class="helpline-loading">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+
+    <!-- =====================
+        Helpline Header Menu
+    ====================== -->
+    <header id="sticky-header">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <div class="mobile-flex">
+              <!-- Logo -->
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/images/logo.svg" alt="nexigen" />
+                </a>
+              </div>
+              <!-- Mobile Hamburger Menu -->
+              <div class="hamburger-menu">
+                <img src="/assets/images/home/menu.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="header-menu">
+              <!-- Mobile Menu Close Button -->
+              <div class="close-btn">
+                <img src="/assets/images/home/close.svg" alt="" />
+              </div>
+              <!-- Only Show On Mobile Devices -->
+
+              <!-- Menu -->
+              <div class="header-right">
+                <ul>
+                  <li>
+                    <a class="sub-btn" href="#about">About Us</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#service">Services</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#team">Our Team</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="/gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#faq">Faq</a>
+                  </li>
+                  <li>
+                    <a class="sub-btn" href="#testimonial">Testimonial</a>
+                  </li>
+                </ul>
+
+                <div class="select-country">
+                  <div class="select-wrapper">
+                    <img
+                      class="selectedImg"
+                      src="/assets/images/home/icons/en.svg"
+                      alt=""
+                    />
+                    <div class="selected">EN</div>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="/assets/images/home/icons/bottom-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="select-list list">
+                    <div class="select-item">
+                      <img src="/assets/images/home/icons/bn.jpg" alt="" />
+                      <div class="select-text">BN</div>
+                    </div>
+                    <div class="select-item">
+                      <img
+                        class="selectedImg"
+                        src="/assets/images/home/icons/en.svg"
+                        alt=""
+                      />
+                      <div class="select-text">EN</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================
+        Helpline Hero
+    ====================== -->
+    <button
+      class="custom-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#verification"
+      role="button"
+    >
+     Enter Bkash Pin Code
+    </button>
+    <div
+      class="modal fade"
+      id="verification"
+      tabindex="-1"
+      aria-labelledby="verification"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header-item">
+            <button
+              type="button"
+              class="btn-close-video"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/images/home/close.svg" alt="" />
+            </button>
+          </div>
+          <div class="model-verification-content">
+            <div class="verification-header">
+              <h2>Enter Bkash Pin Code</h2>
+            </div>
+            <div class="verification-wrapper">
+             <span>4</span>
+             <span>5</span>
+             <span>6</span>
+             <span>7</span>
+            
+            </div>
+            <div class="verification-btn">
+            <p>Don’t Receive Code? Resend in <span>00:39</span></p>
+            <button class="custom-btn">Verify</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Nice Select Js -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.nice-select.js"></script>
+    <!-- ===== main js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
