@@ -1,10 +1,22 @@
 // Hamburger Menu
 
-$('.hamburger-menu').click(function() {
-  $('.header-menu').addClass('active');
-});
-$('.close-btn').click(function() {
-  $('.header-menu').removeClass('active');
+// $('.hamburger-menu').click(function() {
+//   $('.header-menu').addClass('active');
+// });
+// $('.close-btn').click(function() {
+//   $('.header-menu').removeClass('close');
+// });
+$(document).ready(function() {
+  $('.hamburger-menu').click(function() {
+    $('.header-menu').addClass('active');
+  });
+  
+  $('.close-btn').click(function() {
+    $('.header-menu').removeClass('active');
+  });
+  $('.sub-btn').click(function() {
+    $('.header-menu').removeClass('active');
+  });
 });
 
 // sticky Header 

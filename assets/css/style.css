@@ -25,7 +25,7 @@
   align-items: end;
   justify-content: center;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .hero-img-2 {
   position: absolute;
@@ -45,6 +45,9 @@
 }
 .hero-img-2 img {
   width: 72%;
+}
+.hero-img img {
+  width: 73%;
 }
 .hero-img-content {
   position: absolute;
@@ -176,8 +179,22 @@ select.form-input-select {
 .travel-btn {
   border-radius: 4px;
   padding: 12px;
+  transition: 0.4s;
   text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
   /* border: 1px solid var(--primary-color); */
+}
+.travel-next-btn:hover {
+  background: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.travel-back-btn:hover {
+  background: linear-gradient(180deg, #F90 0%, rgba(208, 85, 16, 0.80) 100%) !important;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
 }
 .travel-back-btn {
   background: none;
