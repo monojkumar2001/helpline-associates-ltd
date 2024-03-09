@@ -22,24 +22,24 @@ $(document).ready(function() {
   });
 });
 
-  function removeSubmenu(event) {
-    if (isMobileDevice()) {
-      closeHeaderMenu();
-    }
-  }
+  // function removeSubmenu(event) {
+  //   if (isMobileDevice()) {
+  //     closeHeaderMenu();
+  //   }
+  // }
 
-  var subBtns = document.querySelectorAll('.sub-btn');
-  subBtns.forEach(function(btn) {
-    btn.addEventListener('click', removeSubmenu);
-  });
+  // var subBtns = document.querySelectorAll('.sub-btn');
+  // subBtns.forEach(function(btn) {
+  //   btn.addEventListener('click', removeSubmenu);
+  // });
 
-  $(".hamburger-menu").click(function () {
-    $(".header-menu").addClass("active");
-  });
+  // $(".hamburger-menu").click(function () {
+  //   $(".header-menu").addClass("active");
+  // });
 
-  $(".close-btn").click(function () {
-    $(".header-menu").removeClass("active");
-  });
+  // $(".close-btn").click(function () {
+  //   $(".header-menu").removeClass("active");
+  // });
 
 
 // sticky Header

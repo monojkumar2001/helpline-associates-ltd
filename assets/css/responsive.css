@@ -295,6 +295,17 @@
 .thank-you-text {
     font-size: 20px;
 }
+.travel-next-btn:hover {
+  background: linear-gradient(180deg, #F90 0%, rgba(208, 85, 16, 0.80) 100%) !important;
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+.travel-back-btn:hover {
+  background: linear-gradient(180deg, #F90 0%, rgba(208, 85, 16, 0.80) 100%) !important;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+}
 }
 @media only screen and (max-width: 576px) {
   .trusted-client-img ul li {
