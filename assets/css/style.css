@@ -481,6 +481,7 @@ div#copyButton {
 section.trusted-client {
   background: #fffaf6;
   padding: 50px 0;
+  overflow-x: hidden;
 }
 .trusted-client-wrapper h3 {
   font-size: 32px;
@@ -490,6 +491,9 @@ section.trusted-client {
 }
 .trusted-client-img {
   margin-top: 40px;
+  display: flex;
+  width: fit-content;
+  gap: 10px;
 }
 .trusted-client-img ul {
   display: grid;
@@ -498,6 +502,13 @@ section.trusted-client {
   margin-bottom: 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    animation: marquee 20s linear infinite; 
+    padding: 20px 0;
 }
 .trusted-client-img ul li {
   border-radius: 4px;
@@ -505,11 +516,20 @@ section.trusted-client {
   box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.08),
     0px 6px 15px -2px rgba(16, 24, 40, 0.08);
   padding: 15px 8px;
-  width: 100%;
+  width: 248px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+/* .trusted-client-img li {
+  display: inline-block;
+  padding: 0 10px; 
+} */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Adjust the percentage based on the width of your images */
 }
 
 /*  =====================
@@ -681,6 +701,11 @@ section.our-service {
 .our-service-img {
   width: 100%;
   height: 100%;
+  transition: 0.4s;
+}
+
+.our-service-img:nth-child(1):hover{
+  transform: scale(1.1);
 }
 .our-service-img img {
   width: 100%;
@@ -692,6 +717,8 @@ a.our-service-card {
   align-items: center;
   justify-content: center;
   height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 a.our-service-card p {
@@ -1097,6 +1124,7 @@ p.faq-question-answer {
   padding-top: 30px;
 }
 
+
 .contact-us-right {
   padding: 40px;
 }
@@ -1124,6 +1152,48 @@ p.faq-question-answer {
          Image CSS
     ======================  */
 .image-slider-item img {
+  width: 100%;
+}
+.modal-wrapper-con{
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 100px 0px;
+  z-index: 9999;
+}
+.modal-content-con{
+  position: relative  ;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content-con .btn-img-close{
+  background: var(--main-color);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-content-con .btn-img-close img{
+  width: 100%;
+}
+.modal-content-con img{
   width: 100%;
 }
 /*  =====================

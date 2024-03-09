@@ -63,7 +63,7 @@ var swiper = new Swiper(".mySwiper", {
   freeMode: true,
   loop: true, // Enable continuous loop
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -103,7 +103,7 @@ var swiper = new Swiper(".myteam", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 3500,
     disableOnInteraction: false,
   },
   navigation: {
@@ -522,3 +522,62 @@ function handleFiles(files) {
     }
   }
 }
+
+  // Image Propup 
+
+// document.querySelectorAll('.gallery-image').forEach(function (img, index) {
+//   img.addEventListener('click', function () {
+//     openModal(index);
+//   });
+// });
+
+// var modal = document.getElementById('imageModal');
+// var closeBtn = document.getElementsByClassName('btn-img-close')[0];
+
+
+// function openModal(index) {
+//   var modalImage = document.getElementById('modalImage');
+//   modalImage.src = document.getElementsByClassName('gallery-image')[index].src;
+//   modal.style.display = 'block';
+// }
+
+// closeBtn.onclick = function() {
+//   modal.style.display = 'none';
+// };
+
+
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = 'none';
+//   }
+// };
+
+
+  // Image Propup 
+
+  document.querySelectorAll('.gallery-image').forEach(function (img, index) {
+    img.addEventListener('click', function () {
+      openModal(index);
+    });
+  });
+  
+  var modal = document.getElementById('imageModal');
+  var closeBtn = document.getElementsByClassName('btn-img-close')[0];
+  
+  
+  function openModal(index) {
+    var modalImage = document.getElementById('modalImage');
+    modalImage.src = document.getElementsByClassName('gallery-image')[index].src;
+    modal.style.display = 'block';
+  }
+  
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  };
+  
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };

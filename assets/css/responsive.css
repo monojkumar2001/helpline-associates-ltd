@@ -1,12 +1,5 @@
-@media only screen and (max-width: 1400px) {
-  .trusted-client-img ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
+
 @media only screen and (max-width: 1100px) {
-  .trusted-client-img ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .our-service-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,9 +97,7 @@
     width: 70%;
     padding-bottom: 30px;
   }
-  .trusted-client-img ul {
-    grid-template-columns: 1fr 1fr;
-  }
+
   .footer-list-item {
     padding: 0 10px 20px 10px;
   }
@@ -171,8 +162,14 @@
   .thank-you-text {
     font-size: 25px;
   }
+  .modal-content-con{
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .modal-content-con{
+    width: 70%;
+  }
   .hero-img-content {
     left: 16%;
     bottom: -9%;
@@ -302,6 +299,10 @@
 @media only screen and (max-width: 576px) {
   .trusted-client-img ul li {
     height: 100%;
+    width: 160px;
+  }
+  .modal-content-con{
+    width: 80%;
   }
   .trusted-client-img ul li img {
     width: 100%;
