@@ -115,7 +115,7 @@
 }
 
 .hero-form-content {
-  padding: 30px 20px;
+  padding: 30px 40px 50px 40px;
 }
 
 .travel-form-title {
@@ -136,7 +136,7 @@
 }
 
 .form-input-item label {
-  font-size: 14px;
+  font-size: 17px;
   color: #080501;
 }
 .form-input-item input {
@@ -298,6 +298,7 @@ select.form-input-select {
   padding: 15px;
   background: #fefaf3;
   text-align: center;
+  margin-top: 10px;
 }
 
 .travel-bank-text span {
@@ -335,8 +336,9 @@ select.form-input-select {
 }
 
 .upload-img-header h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 146%;
 }
 
 .upload-img-content {
@@ -351,7 +353,6 @@ select.form-input-select {
   text-align: center;
   margin-top: 20px;
 }
-
 .upload-or {
   margin-top: 20px;
   display: flex;
@@ -359,26 +360,120 @@ select.form-input-select {
   justify-content: center;
   gap: 10px;
 }
-
 .upload-or .or-line {
   width: 100%;
   height: 1px;
   background: #989494;
 }
-
 .travel-input-bkash-item p {
   font-size: 15px;
   color: #777777;
   opacity: 0.76;
 }
-
 div#copyButton {
   font-size: 14px;
 }
-
 .travel-bkash-number {
   margin-bottom: 15px;
 }
+/* Select gender */
+
+.select-gender {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  cursor: pointer;
+  padding: 0 10px;
+  width: 100%;
+  z-index: 1;
+}
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.select-list-items {
+  background-color: var(--white-color);
+  position: absolute;
+  top: 32px;
+  left: 0;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+  box-shadow: 0px 8px 19px 0px rgba(67, 70, 70, 0.1),
+    0px 34px 34px 0px rgba(67, 70, 70, 0.09),
+    0px 76px 46px 0px rgba(67, 70, 70, 0.05),
+    0px 136px 54px 0px rgba(67, 70, 70, 0.01),
+    0px 212px 59px 0px rgba(67, 70, 70, 0);
+  overflow-y: auto;
+  max-height: 250px;
+  cursor: pointer;
+  width: 100%;
+  display: none;
+}
+.show {
+  display: block;
+}
+.close {
+  display: none;
+}
+.select-list-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  transition: 0.4s;
+}
+.select-list-item:hover {
+  background-color: #ddd;
+}
+
+.upload-img-content {
+  display: flex;
+  align-items: center;
+}
+
+.upload-img {
+  margin-right: 20px;
+}
+
+.upload-input-fuild {
+  display: flex;
+  flex-direction: column;
+}
+
+#previewImage {
+  width: 100px; /* Adjust the size of the preview image as needed */
+  height: 100px; /* Adjust the size of the preview image as needed */
+  border: 2px solid #ccc; /* Add a border to the preview image */
+  border-radius: 5px; /* Optional: Add border radius for a rounded look */
+}
+
+#imageInput {
+  display: none; /* Hide the default file input */
+}
+
+/* 
+  .travel-input-bkash-item {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+
+  .copy-button span {
+    margin-right: 5px;
+  }
+
+  .copy-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  } */
 
 /*  =====================
        Trusted Clients CSS
@@ -547,7 +642,7 @@ a.gallery-link {
 .about-us-rokect-img img {
   width: 80%;
 }
-.btn-close-video{
+.btn-close-video {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -577,13 +672,13 @@ section.our-service {
   padding: 60px 0;
 }
 
-.our-service-wrapper{
-    display: grid;
-    grid-template-columns: 32% 22% 22% 22%;
-    padding: 10px;
-    gap: 10px;
+.our-service-wrapper {
+  display: grid;
+  grid-template-columns: 32% 22% 22% 22%;
+  padding: 10px;
+  gap: 10px;
 }
-.our-service-img{
+.our-service-img {
   width: 100%;
   height: 100%;
 }
@@ -603,7 +698,11 @@ a.our-service-card p {
   position: absolute;
   bottom: 0;
   border-radius: 0px 0px 4px 4px;
-  background: linear-gradient(91deg, rgba(10, 28, 53, 0.60) 0.57%, rgba(8, 14, 15, 0.34) 90.28%);
+  background: linear-gradient(
+    91deg,
+    rgba(10, 28, 53, 0.6) 0.57%,
+    rgba(8, 14, 15, 0.34) 90.28%
+  );
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -632,13 +731,13 @@ a.our-service-card p {
 
 a.our-service-card.our-service-card-seven {
   border-radius: 4px;
-  background: #99E1F0;
+  background: #99e1f0;
   padding: 10px;
   flex-direction: column;
   gap: 10px;
 }
 a.our-service-card.our-service-card-seven h5 {
-  color: #1D1D1D;
+  color: #1d1d1d;
   font-size: 19px;
   line-height: 140%;
 }
@@ -866,7 +965,7 @@ p.client-text {
   transform: rotate(45deg);
 }
 .faq-question-title.active .plus-icon svg path {
-  fill: #d44444 ; 
+  fill: #d44444;
 }
 .faq-question-title button {
   border: none;
@@ -986,7 +1085,7 @@ p.faq-question-answer {
   transform: translateY(-5px);
 }
 .social-icon:hover svg path {
-  fill: #1A98DF;
+  fill: #1a98df;
 }
 .contact-us-wrapper {
   border-radius: 24px;
@@ -1073,6 +1172,10 @@ footer.footer {
 .quick-link-item ul li a {
   color: var(--white-color);
   margin-bottom: 10px;
+  transition: 0.4s;
+}
+.quick-link-item ul li a:hover {
+  color: #e6ba77;
 }
 .footer-list-item.footer-list-item-link {
   border-right: 1px solid #4c3d29;
@@ -1161,12 +1264,22 @@ h1.service-title {
 }
 
 .service-vedio-content {
-  /* margin-top: 40px; */
   padding-top: 40px;
   margin: auto;
   width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
+.service-vedio-btn {
+  position: absolute;
+  border: none;
+  background: none;
+}
+.service-vedio-btn img {
+  width: 50px;
+}
 .service-content-header {
   /* margin-bottom: 20px; */
   text-align: center;
@@ -1178,21 +1291,24 @@ h1.service-title {
 .service-video-content {
   margin: auto;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
 }
-
-.service-video-content img {
+.service-video-img img {
   width: 100%;
 }
-
 /*  =====================
         Service Details CSS
     ======================  */
-    .gallery-img-wrapper{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.gallery-img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 section.gallery-details {
   padding: 50px 0;
 }
@@ -1210,7 +1326,7 @@ section.gallery-details {
 .gallery-img img {
   width: 100%;
 }
-.swiper-gallery-btn{
+.swiper-gallery-btn {
   position: absolute;
   /* left: 0; */
   z-index: 111;
@@ -1221,8 +1337,8 @@ section.gallery-details {
   width: 100%;
   padding: 0 40px;
 }
-.swiper-gallery-btn{
-background: none;
+.swiper-gallery-btn {
+  background: none;
 }
 
 .swiper.GalleryImage.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
@@ -1233,22 +1349,116 @@ background: none;
   flex-direction: column;
 }
 
-
 /*  =====================
         Error page CSS
     ======================  */
-    section.error {
-      padding: 50px 0 100px 0;
-  }
-  .error-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-  .error-content h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-  }
+section.error {
+  padding: 50px 0 100px 0;
+}
+.error-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.error-content h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.about-us-video-btn img {
+  width: 50px;
+}
+.error-img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-img img {
+  width: 60%;
+}
+.travel-input-bkash-image {
+  width: 100%;
+}
+.travel-input-bkash-image img {
+  width: 100%;
+}
+
+/*  =====================
+      Verify Page CSS
+    ======================  */
+.model-verification-content {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.model-verification-content {
+  padding: 50px 40px;
+}
+.verification-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.verification-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7cccf;
+}
+.verification-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.verification-wrapper span {
+  width: 100%;
+  height: 50px;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+}
+.verification-btn .custom-btn {
+  background-color: #ff9900;
+  width: 100%;
+  padding: 7px;
+  border-radius: 6px;
+}
+.verification-btn p {
+  color: #777777;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+.verification-btn span {
+  color: #4a4a4a;
+}
+.verification-header p {
+  color: #777777;
+}
+.verification-headerspan {
+  color: #4a4a4a;
+}
+.thank-you-img {
+  width: 60%;
+  margin-bottom: 30px;
+  margin: auto;
+}
+.thank-you-img img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.thank-you-text {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 150%;
+}

@@ -209,6 +209,7 @@
                 </button>
               </div>
               <div class="hero-form-content">
+                <!-- ============== General Passengers Form  =============== -->
                 <div id="generalPassengersContent" class="tab-content">
                   <form action="">
                     <div class="travel-form" id="step1">
@@ -364,6 +365,50 @@
                                   <option value="1">Male</option>
                                   <option value="2">Female</option>
                                 </select>
+
+                                <!-- <div class="select-gender">
+                                  <div class="select-wrapper">
+                                    <img
+                                      class="selectedImg"
+                                      src="/assets/images/home/icons/en.svg"
+                                      alt=""
+                                    />
+                                    <div class="selected-gender">Select</div>
+                                  </div>
+                                  <div class="arrow-icon">
+                                    <img
+                                      src="/assets/images/home/icons/bottom-arrow.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div
+                                    class="select-list-gender select-list-items"
+                                  >
+                                    <div
+                                      class="select-item-gender select-list-item"
+                                    >
+                                      <img
+                                      class="select-img"
+                                        src="/assets/images/home/icons/male.png"
+                                        alt=""
+                                      />
+                                      <div class="select-text-gender">Male</div>
+                                    </div>
+                                    <div
+                                      class="select-item-gender select-list-item"
+                                    >
+                                      <img
+                                       class="select-img"
+                                        class="selected-img-gender"
+                                        src="/assets/images/home/icons/female.png"
+                                        alt=""
+                                      />
+                                      <div class="select-text-gender">
+                                        Female
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> -->
                               </div>
                             </div>
                             <div class="col-md-6"></div>
@@ -413,7 +458,8 @@
                               name=""
                               id=""
                               cols="30"
-                              rows="10"
+                              rows="7"
+                              placeholder="write message.."
                             ></textarea>
                           </div>
                         </div>
@@ -518,13 +564,14 @@
                     </div>
                   </form>
                 </div>
-
+                <!-- ==============Corporate Passengers Form  =============== -->
                 <div
                   id="corporatePassengersContent"
                   class="tab-content"
                   style="display: none"
                 >
                   <form action="">
+                     <!-- =============== Corporate Passengers From 1 ============ -->
                     <div class="travel-form" id="steps1">
                       <div class="travel-form-title">
                         <h1>Travel Details</h1>
@@ -648,7 +695,7 @@
                         </div>
                       </div>
                     </div>
-
+<!-- =============== Corporate Passengers From 2 ============ -->
                     <div class="travel-form" id="steps2" style="display: none">
                       <div class="travel-form-title">
                         <h1>Passenger Details</h1>
@@ -727,12 +774,14 @@
                               name=""
                               id=""
                               cols="30"
-                              rows="10"
+                              rows="7"
+                              placeholder="write message.."
                             ></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- =============== Corporate Passengers From 3 ============ -->
                     <div class="travel-form" id="steps3" style="display: none">
                       <div class="travel-form-details">
                         <h4>Travel Details</h4>
@@ -814,6 +863,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- =============== Corporate Passengers From 4 ============ -->
                     <div class="travel-form" id="steps4" style="display: none">
                       <div class="travel-form-details">
                         <h4>Mobile Banking</h4>
@@ -830,7 +880,10 @@
                             value="01122365894"
                             id="phoneNumber"
                           />
-                          <div id="copyButton">
+                          <div
+                            id="copyButton"
+                            onclick="copyText('phoneNumber')"
+                          >
                             <span>Copy</span>
                             <img
                               src="/assets/images/home/icons/copy.svg"
@@ -849,12 +902,13 @@
                             </label>
                           </div>
                         </div>
+
                         <div class="upload-img-content">
                           <div class="upload-img">
                             <img
                               id="previewImage"
                               src="/assets/images/home/icons/upload.png"
-                              alt=""
+                              alt="Preview Image"
                             />
                           </div>
                           <div class="upload-input-fuild">
@@ -864,7 +918,13 @@
                               id="imageInput"
                               onchange="previewFile()"
                             />
-                            <p>Drag and drop or Browse</p>
+                            <p></p>
+                            <label
+                              for="imageInput"
+                              class="upload-btn"
+                              id="uploadBtn"
+                              >Drag and drop or <span>Browse</span></label
+                            >
                             <p>Png, Jpg, Gif (Max 5MB)</p>
                           </div>
                         </div>
@@ -906,6 +966,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- =============== Corporate Passengers From 5 ============ -->
                     <div class="travel-form" id="steps5" style="display: none">
                       <div class="travel-form-details">
                         <h4>Bank Payment</h4>
@@ -919,12 +980,16 @@
                           <div class="travel-bkash-number">
                             <label for="">Account Number </label>
                             <div class="travel-input-bkash-item">
-                              <p>1334010189056</p>
-                              <div id="copyButton">
+                              <p id="textToCopy">1334010189056</p>
+                              <div
+                                id="copyButton"
+                                onclick="copyText('textToCopy')"
+                              >
                                 <span>Copy</span>
                                 <img
                                   src="/assets/images/home/icons/copy.svg"
-                                  alt=""
+                                  alt="Copy Icon"
+                                  id="copyIcon"
                                 />
                               </div>
                             </div>
@@ -934,12 +999,15 @@
                           <div class="travel-bkash-number">
                             <label for="">Branch Name </label>
                             <div class="travel-input-bkash-item">
-                              <p>Kawran Bazar Branch</p>
-                              <div id="copyButton">
+                              <p id="branchName">Kawran Bazar Branch</p>
+                              <div
+                                id="copyButton"
+                                onclick="copyText('branchName')"
+                              >
                                 <span>Copy</span>
                                 <img
                                   src="/assets/images/home/icons/copy.svg"
-                                  alt=""
+                                  alt="Copy Icon"
                                 />
                               </div>
                             </div>
@@ -949,12 +1017,15 @@
                           <div class="travel-bkash-number">
                             <label for="">Account Holder Name</label>
                             <div class="travel-input-bkash-item">
-                              <p>Andrew Kilan</p>
-                              <div id="copyButton">
+                              <p id="accountHolder">Andrew Kilan</p>
+                              <div
+                                id="copyButton"
+                                onclick="copyText('accountHolder')"
+                              >
                                 <span>Copy</span>
                                 <img
                                   src="/assets/images/home/icons/copy.svg"
-                                  alt=""
+                                  alt="Copy Icon"
                                 />
                               </div>
                             </div>
@@ -964,12 +1035,15 @@
                           <div class="travel-bkash-number">
                             <label for="">SWIFT/BIC Code </label>
                             <div class="travel-input-bkash-item">
-                              <p>CIBLBDDH XXX</p>
-                              <div id="copyButton">
+                              <p id="swiftCode">CIBLBDDH XXX</p>
+                              <div
+                                id="copyButton"
+                                onclick="copyText('swiftCode')"
+                              >
                                 <span>Copy</span>
                                 <img
                                   src="/assets/images/home/icons/copy.svg"
-                                  alt=""
+                                  alt="Copy Icon"
                                 />
                               </div>
                             </div>
@@ -979,8 +1053,11 @@
                           <div class="travel-bkash-number">
                             <label for="">District Name </label>
                             <div class="travel-input-bkash-item">
-                              <p>Dhaka</p>
-                              <div id="copyButton">
+                              <p id="DhakaCode">Dhaka</p>
+                              <div
+                                id="copyButton"
+                                onclick="copyText('DhakaCode')"
+                              >
                                 <span>Copy</span>
                                 <img
                                   src="/assets/images/home/icons/copy.svg"
@@ -991,7 +1068,7 @@
                           </div>
                         </div>
                         <div class="col-md-6">
-                          <div class="travel-bkash-number">
+                          <!-- <div class="travel-bkash-number">
                             <label for="">Upload your transaction image </label>
                             <div class="travel-input-bkash-item">
                               <p>Drag and drop</p>
@@ -1000,6 +1077,22 @@
                                 <img
                                   src="/assets/images/home/icons/drop-icon.png"
                                   alt=""
+                                />
+                              </div>
+                            </div>
+                          </div> -->
+                          <div class="travel-bkash-number">
+                            <label for="">Upload your transaction image</label>
+                            <div
+                              class="travel-input-bkash-item travel-input-bkash-image"
+                              id="dropArea"
+                            >
+                              <p>Drag and drop</p>
+                              <div id="copyButton">
+                                <img
+                                  src="/assets/images/home/icons/drop-icon.png"
+                                  alt="Drop Icon"
+                                  id="dropIcon"
                                 />
                               </div>
                             </div>
@@ -2323,21 +2416,21 @@
                       <a href="#about">About Us</a>
                     </li>
                     <li>
-                      <a href="#about">Services</a>
+                      <a href="#service">Services</a>
                     </li>
                     <li>
-                      <a href="#about">Careers</a>
+                      <a href="#">Careers</a>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="#gallery">Gallery</a>
+                      <a href="/gallery.html">Gallery</a>
                     </li>
                     <li>
                       <a href="#faq">Faq</a>
                     </li>
                     <li>
-                      <a href="#about">Testimonial</a>
+                      <a href="#testimonial">Testimonial</a>
                     </li>
                   </ul>
                 </div>
