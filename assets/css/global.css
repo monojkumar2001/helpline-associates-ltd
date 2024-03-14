@@ -80,12 +80,6 @@ button:focus {
   outline: none;
 }
 
-.container {
-  max-width: 1340px;
-  margin: auto;
-  padding: 0 10px;
-}
-
 /* ============================GENERAL STYLE END======= */
 
 h1,
