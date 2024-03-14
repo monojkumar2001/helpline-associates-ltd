@@ -1,83 +1,95 @@
-/* =====================
-    Hero CSS
-======================= */
 .hero {
   padding-top: 45px;
   padding-bottom: 50px;
 }
+
 .hero-left {
   padding-right: 30px;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 80%;
 }
+
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 34px;
   font-family: var(--primary-font);
   font-weight: 600;
 }
+
 .hero-img-wrapper {
   position: relative;
   display: flex;
   align-items: end;
   justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 0px;
 }
+
 .hero-img-2 {
   position: absolute;
   top: -14%;
   left: 19%;
 }
+
 .hero-img-3 {
   position: absolute;
   top: -77px;
   right: -46px;
 }
+
 .hero-left {
   padding-right: 30px;
 }
+
 .hero-img-3 img {
   width: 58%;
 }
+
 .hero-img-2 img {
   width: 72%;
 }
+
 .hero-img img {
-  width: 73%;
+  width: 69%;
 }
+
 .hero-img-content {
   position: absolute;
-  bottom: 0%;
-  left: 0%;
+  bottom: -5%;
+  left: 6%;
   width: 275px;
   border-radius: 9px;
-  border: 1.5px solid #885a16;
-  background: #fff4e3;
+  border: 1.5px solid rgb(136, 90, 22);
+  background: rgb(255, 244, 227);
   padding: 20px 10px;
 }
+
 .hero-img-icon {
   position: absolute;
   top: -11%;
   left: -9%;
 }
+
 .hero-text-item h4 {
   font-size: 14px;
   font-weight: 600;
 }
+
 .hero-text-item {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 10px;
 }
+
 .hero-line {
   width: 45px;
   height: 2px;
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
 .hero-img-content p {
@@ -85,6 +97,7 @@
   line-height: 24px;
   font-style: italic;
 }
+
 .hero-img {
   width: 100%;
   text-align: right;
@@ -92,35 +105,34 @@
 
 .hero-right {
   border-radius: 8px;
-  box-shadow: 0px 20px 40px -8px rgba(16, 24, 40, 0.1),
-    0px 20px 40px -8px rgba(16, 24, 40, 0.05);
+  box-shadow: rgba(16, 24, 40, 0.1) 0px 20px 40px -8px, rgba(16, 24, 40, 0.05) 0px 20px 40px -8px;
 }
 
 .hero-form-box {
   display: flex;
   align-items: center;
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0px 0px;
   overflow: hidden;
 }
 
 .hero-form-box button {
   width: 100%;
   border: none;
-  background: #f5f2ef;
+  background: rgb(245, 242, 239);
   padding: 14px;
-  color: #4b4848;
+  color: rgb(75, 72, 72);
   font-size: 16px;
   font-weight: 400;
 }
 
 .hero-form-content {
-  padding: 30px 40px 50px 40px;
+  padding: 30px 40px 50px;
 }
 
 .travel-form-title {
   padding-bottom: 20px;
-  border-bottom: 1px solid #c0b8ac;
+  border-bottom: 1px solid rgb(192, 184, 172);
   margin-bottom: 20px;
 }
 
@@ -128,6 +140,7 @@
   font-size: 24px;
   font-weight: 600;
 }
+
 .form-input-item {
   display: flex;
   flex-direction: column;
@@ -136,30 +149,34 @@
 }
 
 .form-input-item label {
-  font-size: 17px;
-  color: #080501;
+  font-size: 16px;
+  color: rgb(8, 5, 1);
 }
+
 .form-input-item input {
   padding: 9px 16px;
   border-radius: 4px;
-  border: 1px solid #c8c5c2;
-  background: #fff;
+  border: 1px solid rgb(200, 197, 194);
+  background: rgb(255, 255, 255);
   width: 100%;
 }
+
 .form-input-item textarea {
   padding: 9px 16px;
   border-radius: 4px;
-  border: 1px solid #c8c5c2;
-  background: #fff;
+  border: 1px solid rgb(200, 197, 194);
+  background: rgb(255, 255, 255);
   width: 100%;
 }
+
 select.form-input-select {
   padding: 15px 16px;
   border-radius: 4px;
-  border: 1px solid #c8c5c2;
-  background: #fff;
+  border: 1px solid rgb(200, 197, 194);
+  background: rgb(255, 255, 255);
   font-size: 14px;
 }
+
 .form-input-cost {
   display: flex;
   align-items: center;
@@ -167,83 +184,94 @@ select.form-input-select {
   width: 100%;
   padding: 9px 16px;
   border-radius: 4px;
-  border: 1px solid #c8c5c2;
-  background: #fff;
+  border: 1px solid rgb(200, 197, 194);
+  background: rgb(255, 255, 255);
 }
 
 .form-input-cost input {
   width: 100%;
   border: none;
-  padding: 0;
+  padding: 0px;
 }
+
 .travel-btn {
   border-radius: 4px;
   padding: 12px;
-  transition: 0.4s;
+  transition: all 0.4s ease 0s;
   text-align: center;
   cursor: pointer;
   border: 1px solid var(--main-color);
-  /* border: 1px solid var(--primary-color); */
 }
+
 .travel-next-btn:hover {
   background: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+
 .travel-back-btn:hover {
-  background: linear-gradient(180deg, #F90 0%, rgba(208, 85, 16, 0.80) 100%) !important;
-  color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  color: #fff;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(255, 153, 0) 0%, rgba(208, 85, 16, 0.8) 100%) !important;
 }
+
 .travel-back-btn {
   background: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+
 .travel-back-btn2 {
   background: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+
 .tab-btn.active {
-  border-bottom: 1.5px solid #e47909;
-  color: #b66103;
-  background: #ffe8d3;
+  border-bottom: 1.5px solid rgb(228, 121, 9);
+  color: rgb(182, 97, 3);
+  background: rgb(255, 232, 211);
   font-size: 16px;
   font-weight: 600;
 }
+
 .phone-number-fluild {
   display: flex;
   align-items: center;
   gap: 5px;
-  border: 1px solid #c8c5c2;
+  border: 1px solid rgb(200, 197, 194);
 }
+
 .phone-number-fluild .nice-select {
   border: none;
 }
+
 .phone-number-fluild input {
   border: none;
 }
+
 .travel-form-details h4 {
   font-size: 20px;
   font-weight: 600;
 }
+
 .travel-form-details {
   padding-bottom: 20px;
 }
+
 .travel-form-details-content {
-  background: #fffbf8;
+  background: rgb(255, 251, 248);
   padding: 15px;
   margin-top: 12px;
   font-size: 16px;
 }
+
 .travel-form-details-content ul li {
   padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  border-bottom: 1px solid #c1baba;
+  border-bottom: 1px solid rgb(193, 186, 186);
   margin-bottom: 10px;
 }
 
@@ -254,38 +282,42 @@ select.form-input-select {
 
 .toggle-switch {
   display: inline-block;
-  background: #ccc;
+  background: rgb(204, 204, 204);
   border-radius: 16px;
   width: 58px;
   height: 27px;
   position: relative;
   vertical-align: middle;
-  transition: background 0.25s;
+  transition: background 0.25s ease 0s;
 }
-.toggle-switch:before,
-.toggle-switch:after {
+
+.toggle-switch::before, .toggle-switch::after {
   content: "";
 }
-.toggle-switch:before {
+
+.toggle-switch::before {
   display: block;
-  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
   border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 1px;
   width: 18px;
   height: 18px;
   position: absolute;
   top: 4px;
   left: 4px;
-  transition: left 0.25s;
+  transition: left 0.25s ease 0s;
 }
-.toggle:hover .toggle-switch:before {
-  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+
+.toggle:hover .toggle-switch::before {
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1px;
 }
+
 .toggle-checkbox:checked + .toggle-switch {
-  background: #ff9900;
+  background: rgb(255, 153, 0);
 }
-.toggle-checkbox:checked + .toggle-switch:before {
+
+.toggle-checkbox:checked + .toggle-switch::before {
   left: 30px;
 }
 
@@ -296,7 +328,7 @@ select.form-input-select {
 
 .travel-bank-text {
   padding: 15px;
-  background: #fefaf3;
+  background: rgb(254, 250, 243);
   text-align: center;
   margin-top: 10px;
 }
@@ -304,13 +336,13 @@ select.form-input-select {
 .travel-bank-text span {
   font-size: 30px;
   font-weight: 600;
-  color: #ff9900;
+  color: rgb(255, 153, 0);
 }
 
 .travel-input-bkash-item {
   border-radius: 4px;
-  border: 1px solid #c8c5c2;
-  background: #f9f5f0;
+  border: 1px solid rgb(200, 197, 194);
+  background: rgb(249, 245, 240);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -320,7 +352,6 @@ select.form-input-select {
 }
 
 .travel-input-bkash-item input {
-  /* width: 100%; */
   border: none;
   background: none;
 }
@@ -343,8 +374,8 @@ select.form-input-select {
 
 .upload-img-content {
   border-radius: 4px;
-  border: 0.5px dashed #bdaba0;
-  background: #f8f6f4;
+  border: 0.5px dashed rgb(189, 171, 160);
+  background: rgb(248, 246, 244);
   padding: 15px;
   display: flex;
   align-items: center;
@@ -353,6 +384,7 @@ select.form-input-select {
   text-align: center;
   margin-top: 20px;
 }
+
 .upload-or {
   margin-top: 20px;
   display: flex;
@@ -360,73 +392,76 @@ select.form-input-select {
   justify-content: center;
   gap: 10px;
 }
+
 .upload-or .or-line {
   width: 100%;
   height: 1px;
-  background: #989494;
+  background: rgb(152, 148, 148);
 }
+
 .travel-input-bkash-item p {
   font-size: 15px;
-  color: #777777;
+  color: rgb(119, 119, 119);
   opacity: 0.76;
 }
+
 div#copyButton {
   font-size: 14px;
 }
+
 .travel-bkash-number {
   margin-bottom: 15px;
 }
-/* Select gender */
 
 .select-gender {
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
-  width: fit-content;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0px 10px;
   width: 100%;
   z-index: 1;
 }
+
 .select-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .select-list-items {
-  background-color: var(--white-color);
   position: absolute;
   top: 32px;
-  left: 0;
-  border-radius: 0 0 5px 5px;
-  background: #fff;
-  box-shadow: 0px 8px 19px 0px rgba(67, 70, 70, 0.1),
-    0px 34px 34px 0px rgba(67, 70, 70, 0.09),
-    0px 76px 46px 0px rgba(67, 70, 70, 0.05),
-    0px 136px 54px 0px rgba(67, 70, 70, 0.01),
-    0px 212px 59px 0px rgba(67, 70, 70, 0);
+  left: 0px;
+  border-radius: 0px 0px 5px 5px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(67, 70, 70, 0.1) 0px 8px 19px 0px, rgba(67, 70, 70, 0.09) 0px 34px 34px 0px, rgba(67, 70, 70, 0.05) 0px 76px 46px 0px, rgba(67, 70, 70, 0.01) 0px 136px 54px 0px, rgba(67, 70, 70, 0) 0px 212px 59px 0px;
   overflow-y: auto;
   max-height: 250px;
   cursor: pointer;
   width: 100%;
   display: none;
 }
+
 .show {
   display: block;
 }
+
 .close {
   display: none;
 }
+
 .select-list-item {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 5px 10px;
-  transition: 0.4s;
+  transition: all 0.4s ease 0s;
 }
+
 .select-list-item:hover {
-  background-color: #ddd;
+  background-color: rgb(221, 221, 221);
 }
 
 .upload-img-content {
@@ -444,77 +479,54 @@ div#copyButton {
 }
 
 #previewImage {
-  width: 100px; /* Adjust the size of the preview image as needed */
-  height: 100px; /* Adjust the size of the preview image as needed */
-  border: 2px solid #ccc; /* Add a border to the preview image */
-  border-radius: 5px; /* Optional: Add border radius for a rounded look */
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 5px;
 }
 
 #imageInput {
-  display: none; /* Hide the default file input */
+  display: none;
 }
 
-/* 
-  .travel-input-bkash-item {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-
-
-  .copy-button span {
-    margin-right: 5px;
-  }
-
-  .copy-button img {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-  } */
-
-/*  =====================
-       Trusted Clients CSS
-    ======================  */
 section.trusted-client {
-  background: #fffaf6;
-  padding: 50px 0;
+  background: rgb(255, 250, 246);
+  padding: 50px 0px;
   overflow-x: hidden;
 }
+
 .trusted-client-wrapper h3 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 140%;
   text-align: center;
 }
+
 .trusted-client-img {
   margin-top: 40px;
   display: flex;
   width: fit-content;
   gap: 10px;
 }
+
 .trusted-client-img ul {
   display: grid;
   gap: 10px;
   align-items: center;
-  margin-bottom: 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap; /* Prevent line breaks */
-    animation: marquee 20s linear infinite; 
-    padding: 20px 0;
+  margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 20s linear 0s infinite normal none running marquee;
+  padding: 20px 0px;
 }
+
 .trusted-client-img ul li {
   border-radius: 4px;
-  background: #fff;
-  box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.08),
-    0px 6px 15px -2px rgba(16, 24, 40, 0.08);
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(16, 24, 40, 0.08) 0px 6px 15px -2px, rgba(16, 24, 40, 0.08) 0px 6px 15px -2px;
   padding: 15px 8px;
   width: 248px;
   display: flex;
@@ -522,24 +534,20 @@ section.trusted-client {
   justify-content: center;
   height: 100%;
 }
-/* .trusted-client-img li {
-  display: inline-block;
-  padding: 0 10px; 
-} */
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* Adjust the percentage based on the width of your images */
-}
+  0% {
+      transform: translateX(0px);
+  }
 
-/*  =====================
-       About Us CSS
-    ======================  */
+  100% {
+      transform: translateX(-100%);
+  }
+}
 
 .about-us-img {
   text-align: right;
   padding-right: 20px;
-  /* position: relative; */
 }
 
 .about-us-icon {
@@ -547,10 +555,8 @@ section.trusted-client {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.08),
-    0px 6px 15px -2px rgba(16, 24, 40, 0.08);
-
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(16, 24, 40, 0.08) 0px 6px 15px -2px, rgba(16, 24, 40, 0.08) 0px 6px 15px -2px;
   width: fit-content;
   padding: 15px 20px;
 }
@@ -572,7 +578,7 @@ section.trusted-client {
 }
 
 .about-us-right h2 {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 150%;
   font-family: var(--primary-font);
   margin-bottom: 20px;
@@ -580,16 +586,14 @@ section.trusted-client {
 }
 
 a.gallery-link {
-  /* padding: 10px; */
-  color: #d17d00;
-  /* padding-top: 23px; */
+  color: rgb(209, 125, 0);
   font-size: 20px;
   font-weight: 600;
 }
 
 .about-us-right p {
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 150%;
 }
 
@@ -605,30 +609,34 @@ a.gallery-link {
 
 .about-us-count-list {
   border-radius: 10px;
-  background: #fff9ee;
+  background: rgb(255, 249, 238);
   padding: 20px;
   width: 220px;
 }
+
 .about-us-count-lists-1 {
-  /* text-align: end; */
   justify-content: end;
   padding-right: 30px;
 }
+
 .about-us-count-lists-1 .about-us-count-list:nth-child(2) {
-  background: #eef9ff;
+  background: rgb(238, 249, 255);
 }
+
 .about-us-count-lists-2 .about-us-count-list:nth-child(1) {
-  background: #e7f5e8;
+  background: rgb(231, 245, 232);
 }
+
 .about-us-count-lists-2 .about-us-count-list:nth-child(2) {
-  background: #feedfa;
+  background: rgb(254, 237, 250);
 }
 
 .about-us-count-list h5 {
   font-size: 24px;
   font-weight: 600;
-  padding: 17px 0px 10px 0;
+  padding: 17px 0px 10px;
 }
+
 .about-us-count-lists.about-us-count-lists-2 {
   padding-left: 20px;
 }
@@ -644,9 +652,11 @@ a.gallery-link {
   align-items: center;
   justify-content: center;
 }
+
 .about-us-video-img img {
   width: 100%;
 }
+
 .about-us-video-btn {
   position: absolute;
   border: none;
@@ -662,6 +672,7 @@ a.gallery-link {
 .about-us-rokect-img img {
   width: 80%;
 }
+
 .btn-close-video {
   position: absolute;
   top: 20px;
@@ -670,26 +681,24 @@ a.gallery-link {
   height: 40px;
   border-radius: 50%;
   background: var(--white-color);
-  border: 1px solid #020202;
+  border: 1px solid rgb(2, 2, 2);
   z-index: 1;
 }
 
-/*  =====================
-        Service Details  CSS
-    ======================  */
 .our-service-title h1 {
-  font-size: 40px;
+  font-size: 32px;
   font-family: var(--primary-font);
   width: 50%;
   margin: auto;
   text-align: center;
   padding-bottom: 40px;
   font-weight: 600;
+  line-height: 145%;
 }
 
 section.our-service {
-  background: #fff4e9;
-  padding: 60px 0;
+  background: rgb(255, 244, 233);
+  padding: 60px 0px;
 }
 
 .our-service-wrapper {
@@ -698,19 +707,22 @@ section.our-service {
   padding: 10px;
   gap: 10px;
 }
+
 .our-service-img {
   width: 100%;
   height: 100%;
-  transition: 0.4s;
+  transition: all 0.4s ease 0s;
 }
 
-.our-service-img:nth-child(1):hover{
+.our-service-img:nth-child(1):hover {
   transform: scale(1.1);
 }
+
 .our-service-img img {
   width: 100%;
   height: 100%;
 }
+
 a.our-service-card {
   position: relative;
   display: flex;
@@ -723,13 +735,9 @@ a.our-service-card {
 
 a.our-service-card p {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   border-radius: 0px 0px 4px 4px;
-  background: linear-gradient(
-    91deg,
-    rgba(10, 28, 53, 0.6) 0.57%,
-    rgba(8, 14, 15, 0.34) 90.28%
-  );
+  background: linear-gradient(91deg, rgba(10, 28, 53, 0.6) 0.57%, rgba(8, 14, 15, 0.34) 90.28%);
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -758,19 +766,17 @@ a.our-service-card p {
 
 a.our-service-card.our-service-card-seven {
   border-radius: 4px;
-  background: #99e1f0;
+  background: rgb(153, 225, 240);
   padding: 10px;
   flex-direction: column;
   gap: 10px;
 }
+
 a.our-service-card.our-service-card-seven h5 {
-  color: #1d1d1d;
+  color: rgb(29, 29, 29);
   font-size: 19px;
   line-height: 140%;
 }
-/*  =====================
-        Message  CSS
-    ======================  */
 
 .about-us-rokect-img {
   position: absolute;
@@ -791,7 +797,7 @@ a.our-service-card.our-service-card-seven h5 {
 }
 
 .message-right h2 {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 150%;
   font-family: var(--primary-font);
   margin-bottom: 20px;
@@ -800,9 +806,9 @@ a.our-service-card.our-service-card-seven h5 {
 
 .message-right p {
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 150%;
-  color: #4a4a4a;
+  color: rgb(74, 74, 74);
 }
 
 .message-name {
@@ -815,7 +821,7 @@ a.our-service-card.our-service-card-seven h5 {
 .message-line {
   width: 40px;
   height: 2px;
-  background: #423f3f;
+  background: rgb(66, 63, 63);
 }
 
 .message-line-icon {
@@ -824,17 +830,14 @@ a.our-service-card.our-service-card-seven h5 {
   right: -13%;
 }
 
-/*  =====================
-          Our Clients CSS
-    ======================  */
-
 .client-user-item {
   border-radius: 4px;
-  background: #fff;
-  box-shadow: 0px 4px 16px 0px rgba(120, 115, 115, 0.25);
-  padding: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(120, 115, 115, 0.25) 0px 4px 16px 0px;
+  padding: 20px 20px 30px 20px;
   margin-top: 20px;
   height: 322px;
+  margin-bottom: 15px;
 }
 
 .client-user-items {
@@ -887,25 +890,21 @@ p.client-text {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
+
 .client-title h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-family: var(--primary-font);
   text-align: center;
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-/*  =====================
-          Team CSS
-    ======================  */
-
 .team-member-content h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-family: var(--primary-font);
   font-weight: 600;
-  /* margin-bottom: 20px; */
 }
 
 .team-member-content {
@@ -921,7 +920,6 @@ p.client-text {
 
 .team-member-img img {
   width: 100%;
-  /* display: grid; */
 }
 
 .team-member-img {
@@ -931,69 +929,69 @@ p.client-text {
 .team-member-item p {
   font-size: 18px;
   font-weight: 600;
-  /* margin-bottom: 10px; */
 }
 
 .team-member-item span {
   font-size: 14px;
-  color: #4a4a4a;
+  color: rgb(74, 74, 74);
   font-weight: 400;
 }
 
 .swiper-arrow-btn {
   position: relative;
-  bottom: 0;
-  right: 0;
+  bottom: 0px;
+  right: 0px;
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: end;
 }
-.swiper-arrow-btn .button-next,
-.button-prev {
+
+.swiper-arrow-btn .button-next, .button-prev {
   border-radius: 100px;
-  background: #fef4e6;
+  background: rgb(254, 244, 230);
   padding: 10px;
 }
-
-/*  =====================
-          Team CSS
-    ======================  */
 
 .faq-head {
   margin-bottom: 30px;
 }
 
 .faq-head h2 {
-  font-size: 40px;
+  font-size: 33px;
   font-family: var(--primary-font);
   margin-bottom: 10px;
   font-weight: 600;
 }
+
 .faq-question-title {
   display: flex;
   padding: 20px;
   gap: 15px;
   align-items: center;
   justify-content: space-between;
-  transition: 0.4s;
-  cursor: pointer; /* Add cursor pointer for indicating it's clickable */
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
 }
 
 .faq-question-title.active {
   border-radius: 12px 12px 0px 0px;
-  background: #3b2f91;
+  background: rgb(59, 47, 145);
   color: var(--white-color);
 }
+
 .faq-question-title.active button {
   color: var(--white-color);
 }
+
 .faq-question-title.active .plus-icon {
   transform: rotate(45deg);
 }
+
 .faq-question-title.active .plus-icon svg path {
-  fill: #d44444;
+  fill: rgb(212, 68, 68);
 }
+
 .faq-question-title button {
   border: none;
   background: none;
@@ -1003,39 +1001,38 @@ p.client-text {
 }
 
 .faq-content-list {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
 
 .faq-content-list-con {
   border-radius: 10px;
   background: var(--Main-Color-White, #fcfcfc);
-  box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.08);
+  box-shadow: rgba(6, 28, 61, 0.08) 0px 12px 56px 0px;
   padding: 30px;
 }
+
 .faq-img img {
   width: 100%;
 }
+
 p.faq-question-answer {
   padding: 10px 15px;
 }
-/*  =====================
-          Contact Us CSS
-    ======================  */
 
 .contact-us-title h1 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
   font-family: var(--primary-font);
   text-align: center;
-  /* margin-bottom: 40px; */
-  width: 40%;
+  width: 33%;
   margin: auto;
   padding-bottom: 40px;
+  line-height: 147%;
 }
 
 .contact-us-left {
   border-radius: 24px 0px 0px 24px;
-  background: #3b2f91;
+  background: rgb(59, 47, 145);
   padding: 70px;
   color: var(--white-color);
   display: flex;
@@ -1047,7 +1044,7 @@ p.faq-question-answer {
 }
 
 .contact-title h2 {
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 600;
 }
 
@@ -1064,7 +1061,6 @@ p.faq-question-answer {
 }
 
 .contact-us-icon {
-  /* background: #ddd; */
   background: rgba(255, 255, 255, 0.08);
   padding: 10px;
   border-radius: 50%;
@@ -1085,7 +1081,7 @@ p.faq-question-answer {
 .connent-line {
   width: 40px;
   height: 2px;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 
 .social-icon-list {
@@ -1097,33 +1093,35 @@ p.faq-question-answer {
 
 .social-icon {
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: 0.4s;
+  transition: all 0.4s ease 0s;
   cursor: pointer;
 }
+
 .social-icon:hover {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   transform: translateY(-5px);
 }
+
 .social-icon:hover svg path {
-  fill: #1a98df;
+  fill: rgb(26, 152, 223);
 }
+
 .contact-us-wrapper {
   border-radius: 24px;
   background: var(--Gray-00, #fff);
-  box-shadow: 0px 8px 20px 0px #ededf2;
+  box-shadow: rgb(237, 237, 242) 0px 8px 20px 0px;
 }
 
 .connect-us {
   padding-top: 30px;
 }
-
 
 .contact-us-right {
   padding: 40px;
@@ -1148,13 +1146,11 @@ p.faq-question-answer {
   width: 100%;
 }
 
-/*  =====================
-         Image CSS
-    ======================  */
 .image-slider-item img {
   width: 100%;
 }
-.modal-wrapper-con{
+
+.modal-wrapper-con {
   display: none;
   position: fixed;
   left: 0px;
@@ -1166,8 +1162,9 @@ p.faq-question-answer {
   padding: 100px 0px;
   z-index: 9999;
 }
-.modal-content-con{
-  position: relative  ;
+
+.modal-content-con {
+  position: relative;
   width: 40%;
   display: flex;
   align-items: center;
@@ -1176,7 +1173,8 @@ p.faq-question-answer {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-content-con .btn-img-close{
+
+.modal-content-con .btn-img-close {
   background: var(--main-color);
   width: 40px;
   height: 40px;
@@ -1190,19 +1188,18 @@ p.faq-question-answer {
   border-radius: 10px;
   cursor: pointer;
 }
-.modal-content-con .btn-img-close img{
+
+.modal-content-con .btn-img-close img {
   width: 100%;
 }
-.modal-content-con img{
+
+.modal-content-con img {
   width: 100%;
 }
-/*  =====================
-         Footer CSS
-    ======================  */
 
 footer.footer {
-  background: #251706;
-  padding: 50px 0 30px 0;
+  background: rgb(37, 23, 6);
+  padding: 50px 0px 30px;
 }
 
 .footer-logo {
@@ -1211,45 +1208,46 @@ footer.footer {
 }
 
 .footer-wrapper {
-  border-top: 1px solid #4a3f33;
-  border-bottom: 1px solid #4a3f33;
-  padding: 50px 0;
+  border-top: 1px solid rgb(74, 63, 51);
+  border-bottom: 1px solid rgb(74, 63, 51);
+  padding: 50px 0px;
   color: var(--white-color);
 }
 
 .footer-list-item h3 {
-  color: #e6ba77;
+  color: rgb(230, 186, 119);
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .footer-list {
   display: flex;
   flex-direction: column;
-  /* gap: 0px; */
   margin-bottom: 20px;
 }
+
 .footer-list a {
   color: var(--white-color);
 }
 
 .quick-link-item {
   display: flex;
-  /* justify-content: space-between; */
-  /* padding-right: 40px; */
   gap: 50px;
 }
 
 .quick-link-item ul li a {
   color: var(--white-color);
   margin-bottom: 10px;
-  transition: 0.4s;
+  transition: all 0.4s ease 0s;
 }
+
 .quick-link-item ul li a:hover {
-  color: #e6ba77;
+  color: rgb(230, 186, 119);
 }
+
 .footer-list-item.footer-list-item-link {
-  border-right: 1px solid #4c3d29;
-  border-left: 1px solid #4c3d29;
+  border-right: 1px solid rgb(76, 61, 41);
+  border-left: 1px solid rgb(76, 61, 41);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1259,21 +1257,20 @@ footer.footer {
 .footer-list-item {
   height: 100%;
 }
+
 .footer-list-item-social {
   padding-left: 30px;
 }
+
 .footer-copy-text {
   text-align: center;
   padding-top: 30px;
   color: var(--white-color);
   font-weight: 400;
 }
-/*  =====================
-        Service Details CSS
-    ======================  */
 
 section.service-item {
-  padding: 50px 0;
+  padding: 50px 0px;
 }
 
 .service-header {
@@ -1286,15 +1283,15 @@ section.service-item {
 .service-box {
   width: 16px;
   height: 16px;
-  background: #ff9900;
+  background: rgb(255, 153, 0);
 }
 
 .service-header a {
-  color: #a5a5a5;
+  color: rgb(165, 165, 165);
 }
 
 h1.service-title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   font-family: var(--primary-font);
   margin-bottom: 15px;
@@ -1327,7 +1324,6 @@ h1.service-title {
 .serivce-footer-content h5 {
   margin-top: 30px;
   line-height: 160%;
-  /* width: 70%; */
   font-size: 32px;
   font-weight: 600;
   text-align: center;
@@ -1342,16 +1338,18 @@ h1.service-title {
   justify-content: center;
   flex-direction: column;
 }
+
 .service-vedio-btn {
   position: absolute;
   border: none;
   background: none;
 }
+
 .service-vedio-btn img {
   width: 50px;
 }
+
 .service-content-header {
-  /* margin-bottom: 20px; */
   text-align: center;
   width: 75%;
   margin: auto;
@@ -1367,46 +1365,50 @@ h1.service-title {
   position: relative;
   flex-direction: column;
 }
+
 .service-video-img img {
   width: 100%;
 }
-/*  =====================
-        Service Details CSS
-    ======================  */
+
 .gallery-img-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 section.gallery-details {
-  padding: 50px 0;
+  padding: 50px 0px;
 }
+
 .gallery-header {
   margin-bottom: 35px;
 }
+
 .gallery-text {
   padding-top: 40px;
 }
+
 .gallery-text p {
   font-size: 23px;
   line-height: 150%;
   font-weight: 400;
 }
+
 .gallery-img img {
   width: 100%;
 }
+
 .swiper-gallery-btn {
   position: absolute;
-  /* left: 0; */
   z-index: 111;
-  /* background: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 40px;
+  padding: 0px 40px;
 }
+
 .swiper-gallery-btn {
   background: none;
 }
@@ -1419,12 +1421,10 @@ section.gallery-details {
   flex-direction: column;
 }
 
-/*  =====================
-        Error page CSS
-    ======================  */
 section.error {
-  padding: 50px 0 100px 0;
+  padding: 50px 0px 100px;
 }
+
 .error-content {
   display: flex;
   flex-direction: column;
@@ -1433,99 +1433,113 @@ section.error {
   justify-content: center;
   text-align: center;
 }
+
 .error-content h1 {
   font-size: 30px;
   margin-bottom: 15px;
   font-weight: 600;
 }
+
 .about-us-video-btn img {
   width: 50px;
 }
+
 .error-img {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .error-img img {
   width: 60%;
 }
+
 .travel-input-bkash-image {
   width: 100%;
 }
+
 .travel-input-bkash-image img {
   width: 100%;
 }
 
-/*  =====================
-      Verify Page CSS
-    ======================  */
 .model-verification-content {
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .model-verification-content {
   padding: 50px 40px;
 }
+
 .verification-header h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 150%;
 }
+
 .verification-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #c7cccf;
+  border-bottom: 1px solid rgb(199, 204, 207);
 }
+
 .verification-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
+
 .verification-wrapper span {
   width: 100%;
   height: 50px;
-  background-color: #ececec;
+  background-color: rgb(236, 236, 236);
   display: flex;
   align-items: center;
   font-weight: 700;
   font-size: 22px;
   justify-content: center;
 }
+
 .verification-btn .custom-btn {
-  background-color: #ff9900;
+  background-color: rgb(255, 153, 0);
   width: 100%;
   padding: 7px;
   border-radius: 6px;
 }
+
 .verification-btn p {
-  color: #777777;
+  color: rgb(119, 119, 119);
   font-size: 14px;
   padding-bottom: 6px;
 }
+
 .verification-btn span {
-  color: #4a4a4a;
+  color: rgb(74, 74, 74);
 }
+
 .verification-header p {
-  color: #777777;
+  color: rgb(119, 119, 119);
 }
+
 .verification-headerspan {
-  color: #4a4a4a;
+  color: rgb(74, 74, 74);
 }
+
 .thank-you-img {
   width: 60%;
-  margin-bottom: 30px;
   margin: auto;
 }
+
 .thank-you-img img {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
 .thank-you-text {
   font-size: 30px;
   font-weight: 600;
