@@ -321,6 +321,9 @@
   border: 1px solid var(--primary-color);
   color: #fff;
 }
+.map-container {
+  height: 300px;
+}
 }
 @media only screen and (max-width: 576px) {
   .trusted-client-img ul li {
